@@ -1,0 +1,2 @@
+no,testcase,nav-link,page-title-box,searchInput,jobtitle-field,primaryskills-field,goodskills-field,relevantdesignations-field,jd_id-field,location-field,positions-field,deadlinedate-field,experience-field,max-experience-field,minsalary-field,maxsalary-field,priority-input,client-input
+1,TC_BR_DuplicateJob_001,Jobs,Job description,JD000231,API automation and PlayWright,"PlayWright, Java, Selenium,ReactJS","","","","Chennai, Pune, HYD, Bangalore",2,31-03-2025,7,0,,,Medium,BRT

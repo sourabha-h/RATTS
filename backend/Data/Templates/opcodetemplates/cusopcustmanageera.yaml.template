@@ -1,0 +1,10 @@
+r << 1 1
+0 PIN_FLD_POID           POID [0] ${poid}
+0 PIN_FLD_VALUE           STR [0] "${eravalue}"
+0 PIN_FLD_ACTION          STR [0] "${action}"
+0 PIN_FLD_TYPE_STR        STR [0] "${type}"
+0 PIN_FLD_MSISDN          STR [0] "${msisdn}"
+0 PIN_FLD_USER_NAME       STR [0] "${username}"
+0 PIN_FLD_PROGRAM_NAME    STR [0] "SelfCare"
+1
+xop CUS_OP_CUST_MANAGE_ERA 0 1

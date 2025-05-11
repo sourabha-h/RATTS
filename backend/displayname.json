@@ -1,0 +1,50 @@
+{
+    "oepsoaptemplates": "OEP SOAP",
+    "opcodetemplates": "OPCODE",
+    "soaptemplates": "SOAP",
+    "resttemplates": "REST",
+    "usagetemplates": "USAGE",
+
+    "modifymobilebroadbandservicechangeplan": "Modify mobile broad band and service change plan",
+    "addmobileservice": "Add mobile service",
+
+    "soapcusopsearch": "Search",
+    "soapcusopintegviewothercharges": "View other charges",
+    "soapcusopsubscriptionviewusage": "Subscription view usage",
+    "soapcusopbillpolviewbill": "View bill",
+
+    "restaddObjects": "Add Objects",
+    "restupdateobjects": "Update Objects",
+    "restpartialUpdateObjects": "Partial Update Objects",
+    "restgetObjects": "Get Objects",
+
+    "cusopintegviewothercharges": "View other charges",
+    "cusopbillpolviewbill": "View bill",
+    "addplan": "Add plan",
+    "pcmopsubscriptioncanceldeal": "Subscription cancel deal",
+    "cusopcustcancelplan": "Cancel plan",
+    "cusopintegapplycharge": "Apply charge",
+    "pcmopbillmakebill": "Make bill",
+    "cusopsearch": "cusop Search",
+    "pcmopinvmakeinvoice": "Make invoice",
+    "cusoppymtpolcollect": "Collect",
+    "cusopcustvalidatechangeplan": "Validate change plan",
+    "billrun": "Bill run",
+    "cusopcustaddplan": "Customer add plan",
+    "pcmopcustmodifyprofile": "Modify profile",
+    "pcmopbalgetecebalances": "Get balances",
+    "cusopcustmoveservice": "Move service",
+    "cusoparpoladjustment": "Adjustment",
+    "cusopcustmanageera": "Customer manage era",
+    "runbill": "Run bill",
+    "pcmopsearch": "pcmop Search",
+    "cusopcustchangeplan": "Customer change plan",
+    "changeplan": "Change plan",
+    "cusopsubscriptionviewusage": "Subscription view usage",
+
+    "datausage":"Data usage",
+    "voiceusage": "Voice usage",
+    "smsusage": "SMS usage"
+    
+  }
+  

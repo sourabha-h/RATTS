@@ -1,0 +1,16 @@
+r << 1 1
+0 PIN_FLD_POID           POID [0] ${poid}
+0 PIN_FLD_AMOUNT       DECIMAL [0] ${amount}
+0 PIN_FLD_PROGRAM_NAME    STR [0] "BULK|OAP|${username}"
+0 PIN_FLD_ACCOUNT_NO      STR [0] "${baaccountno}"
+0 PIN_FLD_FLAGS           INT [0] ${flags} 
+0 CUS_FLD_SUB_CATEGORY2    STR [0] "${category2}"
+0 CUS_FLD_SUB_CATEGORY1    STR [0] "${category1}"
+0 PIN_FLD_USER_NAME       STR [0] "${username}"
+0 CUS_FLD_MAIN_CATEGORY    STR [0] "${maincategory}"
+0 PIN_FLD_TAX_FLAGS       INT [0] ${taxflags} 
+0 PIN_FLD_DESCR           STR [0] "${descr}"
+0 PIN_FLD_USERID         POID [0] NULL poid pointer
+0 PIN_FLD_ACCOUNT_OBJ           POID [0] ${account_obj}
+1
+xop CUS_OP_AR_POL_ADJUSTMENT 0 1

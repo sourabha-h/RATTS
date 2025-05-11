@@ -1,0 +1,16 @@
+{
+  "name": "ratts",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "concurrently \"yarn start:frontend\" \"yarn start:backend\"",
+    "start:frontend": "serve -s frontend -l 3000",
+    "start:backend": "cd backend && python -m uvicorn main:app --reload"
+  },
+  "dependencies": {
+    "concurrently": "^9.1.2",
+    "serve": "^14.2.0",
+    "yarn": "^1.22.22"
+  },
+  "main": "index.js"
+}

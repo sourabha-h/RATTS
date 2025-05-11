@@ -1,0 +1,5 @@
+a   nav-link    class   {nav-link}
+page   div        class   {page-title-box}
+input    text       id       {searchInput}
+input     radio    class   {btn-check}
+a      link        id      changeJobStatusButton

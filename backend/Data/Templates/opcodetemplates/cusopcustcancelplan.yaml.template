@@ -1,0 +1,15 @@
+r << a 1
+0 PIN_FLD_POID           POID [0] ${poid}
+0 PIN_FLD_PLAN          ARRAY [0] allocated 20, used 4
+1     PIN_FLD_NAME            STR [0] "${addon_plan}"
+1     PIN_FLD_PACKAGE_ID      INT [0] ${packageid}
+1     CUS_FLD_PLAN_TYPE       ENUM [0] ${plantype}
+0 PIN_FLD_SERVICE_ID      STR [0] "${serviceid}"
+0 PIN_FLD_PROGRAM_NAME    STR [0] "OAP"
+0 CUS_FLD_CA_ACCOUNT_NO    STR [0] "${caaccountno}"
+0 PIN_FLD_ACCOUNT_NO      STR [0] "${accountno}"
+0 PIN_FLD_USER_NAME       STR [0] "${username}"
+0 PIN_FLD_MSISDN          STR [0] "${msisdn}"
+0 CUS_FLD_BA_ACCOUNT_NO    STR [0] "${baaccountno}"
+a
+xop CUS_OP_CUST_CANCEL_PLAN 0 1

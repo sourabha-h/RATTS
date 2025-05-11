@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Rebot 7.2 (Python 3.13.1 on win32)" generated="2025-04-22T12:12:33.063523" rpa="false" schemaversion="5">
+<suite id="s1" name="Api">
+<kw name="Open Connection And Log In" owner="resources" type="SETUP">
+<kw name="Open Connection" owner="SSHLibrary">
+<arg>${HOST}</arg>
+<doc>Opens a new SSH connection to the given ``host`` and ``port``.</doc>
+<status status="PASS" start="2025-04-22T12:12:09.111417" elapsed="0.000391"/>
+</kw>
+<kw name="Login" owner="SSHLibrary">
+<msg time="2025-04-22T12:12:09.112352" level="INFO">Logging into '192.168.209.108:22' as 'rmsuser'.</msg>
+<msg time="2025-04-22T12:12:22.897463" level="INFO">Read output: Last login: Tue Apr 22 11:28:55 2025 from 10.254.244.46
+
+
+NOTE: BRM is on dev01brm.dhiraagu.com.mv cm_port 11960
+
+[rmsuser@dev01brm ~]$</msg>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+<doc>Logs into the SSH server with the given ``username`` and ``password``.</doc>
+<status status="PASS" start="2025-04-22T12:12:09.112018" elapsed="13.785838"/>
+</kw>
+<status status="PASS" start="2025-04-22T12:12:09.110279" elapsed="13.787888"/>
+</kw>
+<test id="s1-t1" name="CUS_OP_SEARCH_201 Valid Case 1">
+<kw name="Generate Opcode in loop" owner="resources">
+<kw name="Generate Opcode" owner="opcodegeneration">
+<msg time="2025-04-22T12:12:22.904898" level="INFO">1
+{'1': {'no': '1', 'testcase': 'TC_OP_Search_001', 'PIN_FLD_POID': '0.0.0.1 /account -1 0', 'PIN_FLD_USER_NAME': 'ora_support', 'PIN_FLD_PARAM_NAME': 'Mobile', 'PIN_FLD_FLAGS': '201', 'PIN_FLD_VALUE': 'MN16416961'}}</msg>
+<arg>${template}</arg>
+<arg>${key}</arg>
+<arg>${opcodename}</arg>
+<status status="PASS" start="2025-04-22T12:12:22.901169" elapsed="0.003931"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-22T12:12:22.906484" level="INFO">${filename} = cusopsearch201_1.txt</msg>
+<var>${filename}</var>
+<arg>${opcodename}_${key}.txt</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-22T12:12:22.905709" elapsed="0.000961"/>
+</kw>
+<kw name="Saving Opcode File To Remote Location and Executing Opcode" owner="resources">
+<kw name="Get File" owner="OperatingSystem">
+<msg time="2025-04-22T12:12:22.909441" level="INFO" html="true">Getting file '&lt;a href="file://D:\RATTS_bluerise\RATTS\backend\Data\Input\generatedopcode\cusopsearch201_1.txt"&gt;D:\RATTS_bluerise\RATTS\backend\Data\Input\generatedopcode\cusopsearch201_1.txt&lt;/a&gt;'.</msg>
+<msg time="2025-04-22T12:12:22.934458" level="INFO">${contents} = r &lt;&lt; 1 1
+0 PIN_FLD_POID                       POID [0] 0.0.0.1 /account -1 0
+0 PIN_FLD_USER_NAME                  STR [0] "ora_support"
+0 PIN_FLD_PROGRAM_NAME               STR [0] "OAP"
+0 PIN_FLD_PAR...</msg>
+<var>${contents}</var>
+<arg>Data/Input/generatedopcode${/}${filename}</arg>
+<doc>Returns the contents of a specified file.</doc>
+<status status="PASS" start="2025-04-22T12:12:22.908656" elapsed="0.025897"/>
+</kw>
+<kw name="Set Test Message" owner="BuiltIn">
+<msg time="2025-04-22T12:12:22.935829" level="INFO">Set test message to:
+Request:
+r &lt;&lt; 1 1
+0 PIN_FLD_POID                       POID [0] 0.0.0.1 /account -1 0
+0 PIN_FLD_USER_NAME                  STR [0] "ora_support"
+0 PIN_FLD_PROGRAM_NAME               STR [0] "OAP"
+0 PIN_FLD_PARAM_NAME                 STR [0] "Mobile"
+0 PIN_FLD_FLAGS                      INT [0] 201
+0 PIN_FLD_PARAMS                     ARRAY [0] allocated 1, used 1
+1     PIN_FLD_VALUE                  STR [0] "MN16416961"
+1
+xop CUS_OP_SEARCH 0 1
+</msg>
+<arg>Request:${\n}${contents}${\n}</arg>
+<arg>append=${True}</arg>
+<doc>Sets message for the current test case.</doc>
+<status status="PASS" start="2025-04-22T12:12:22.934802" elapsed="0.001299"/>
+</kw>
+<kw name="Put File" owner="SSHLibrary">
+<msg time="2025-04-22T12:12:23.613057" level="INFO">[chan 1] Opened sftp connection (server version 3)</msg>
+<msg time="2025-04-22T12:12:26.958256" level="INFO">'Data\Input\generatedopcode\cusopsearch201_1.txt' -&gt; '/opt/code_root/rmsuser/opt/portal/7.5/sys/test/opcoderequest.txt'</msg>
+<msg time="2025-04-22T12:12:26.958577" level="INFO">${uploadedfile} = None</msg>
+<var>${uploadedfile}</var>
+<arg>Data/Input/generatedopcode/${filename}</arg>
+<arg>${TESTFOLDER}/opcoderequest.txt</arg>
+<arg>mode=0644</arg>
+<arg>newline=LF</arg>
+<doc>Uploads file(s) from the local machine to the remote machine.</doc>
+<status status="PASS" start="2025-04-22T12:12:22.936603" elapsed="4.022055"/>
+</kw>
+<kw name="Execute Command" owner="SSHLibrary">
+<msg time="2025-04-22T12:12:26.959718" level="INFO">Executing command 'cd /opt/code_root/rmsuser/opt/portal/7.5/sys/test;testnap opcoderequest.txt;'.</msg>
+<msg time="2025-04-22T12:12:28.115963" level="INFO">Command exited with return code 0.</msg>
+<msg time="2025-04-22T12:12:28.116574" level="INFO">${output} = xop: opcode 20101, flags 0
+# number of field entries allocated 20, used 3
+0 PIN_FLD_POID           POID [0] 0.0.0.1 /search -1 0
+0 PIN_FLD_RESULTS       ARRAY [1] allocated 20, used 18
+1     PIN_FLD_P...</msg>
+<var>${output}</var>
+<arg>cd ${TESTFOLDER};testnap opcoderequest.txt;</arg>
+<doc>Executes ``command`` on the remote machine and returns its outputs.</doc>
+<status status="PASS" start="2025-04-22T12:12:26.959237" elapsed="1.157443"/>
+</kw>
+<kw name="Create File" owner="OperatingSystem">
+<msg time="2025-04-22T12:12:28.119141" level="INFO" html="true">Created file '&lt;a href="file://D:\RATTS_bluerise\RATTS\backend\Data\output\cusopsearch201_1.txt"&gt;D:\RATTS_bluerise\RATTS\backend\Data\output\cusopsearch201_1.txt&lt;/a&gt;'.</msg>
+<arg>Data/output/${filename}</arg>
+<arg>${output}</arg>
+<doc>Creates a file with the given content and encoding.</doc>
+<status status="PASS" start="2025-04-22T12:12:28.117228" elapsed="0.002137"/>
+</kw>
+<kw name="Format Data" owner="getdata">
+<arg>Data/output/${filename}</arg>
+<status status="PASS" start="2025-04-22T12:12:28.119889" elapsed="0.032497"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-22T12:12:28.153497" level="INFO">cusopsearch201</msg>
+<arg>${opcodename}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-22T12:12:28.152940" elapsed="0.000752"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>"This is message from print, ${opcodename}";</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-22T12:12:28.154171" elapsed="0.000802"/>
+</kw>
+<kw name="Set Test Message" owner="BuiltIn">
+<msg time="2025-04-22T12:12:28.156118" level="INFO">Set test message to:
+Request:
+r &lt;&lt; 1 1
+0 PIN_FLD_POID                       POID [0] 0.0.0.1 /account -1 0
+0 PIN_FLD_USER_NAME                  STR [0] "ora_support"
+0 PIN_FLD_PROGRAM_NAME               STR [0] "OAP"
+0 PIN_FLD_PARAM_NAME                 STR [0] "Mobile"
+0 PIN_FLD_FLAGS                      INT [0] 201
+0 PIN_FLD_PARAMS                     ARRAY [0] allocated 1, used 1
+1     PIN_FLD_VALUE                  STR [0] "MN16416961"
+1
+xop CUS_OP_SEARCH 0 1
+ Response:
+xop: opcode 20101, flags 0
+# number of field entries allocated 20, used 3
+0 PIN_FLD_POID           POID [0] 0.0.0.1 /search -1 0
+0 PIN_FLD_RESULTS       ARRAY [1] allocated 20, used 18
+1     PIN_FLD_PAY_TYPE       ENUM [0] 1
+1     PIN_FLD_SERVICE_ID      STR [0] "MN16416961"
+1     PIN_FLD_STATUS         ENUM [0] 10100
+1     PIN_FLD_LIFECYCLE_STATE    INT [0] 102
+1     PIN_FLD_SERVICE_TYPE    STR [0] "Mobile"
+1     CUS_FLD_BA_ACCOUNT_NO    STR [0] "BA00908631"
+1     CUS_FLD_CA_ACCOUNT_NO    STR [0] "CA01599189"
+1     PIN_FLD_ACCOUNT_NO      STR [0] "NPC01596276"
+1     PIN_FLD_DEVICE_ID       STR [0] "9607896988"
+1     PIN_FLD_ALIAS_LIST    ARRAY [0] allocated 20, used 3
+2         PIN_FLD_SIM             STR [0] "89960013041150334199"
+2         PIN_FLD_IMSI            STR [0] "472010015033419"
+2         PIN_FLD_IMEI            STR [0] ""
+1     PIN_FLD_SERVICE_STATE_EXPIRATION_T TSTAMP [0] (1715453999) Sat May 11 23:59:59 2024
+1     CUS_FLD_SRVC_ATTRIBUTE  ARRAY [0] allocated 26, used 26
+2         CUS_FLD_BAD_PIN_COUNT    INT [0] 0
+2         CUS_FLD_DEVICE_MODEL    STR [0] ""
+2         CUS_FLD_DEVICE_TYPE    ENUM [0] 2
+2         CUS_FLD_DIRECTORY_UNLIST    INT [0] 0
+2         CUS_FLD_FIRST_CALL_TIME TSTAMP [0] (1500750000) Sun Jul 23 00:00:00 2017
+2         CUS_FLD_LAST_PYMT_T  TSTAMP [0] (1711557288) Wed Mar 27 21:34:48 2024
+2         CUS_FLD_LCMS_FLAG       INT [0] 0
+2         CUS_FLD_LEGACY_SERVICE_NO    STR [0] "271788509999"
+2         CUS_FLD_MNP_FLAG        INT [0] 0
+2         CUS_FLD_MOBAPP_FLAG     INT [0] 0
+2         CUS_FLD_MOBMONEY_FLAG    INT [0] 0
+2         CUS_FLD_NICE           ENUM [0] 0
+2         CUS_FLD_NICE_CATEGORY    STR [0] ""
+2         CUS_FLD_OLD_SIM         STR [0] "0"
+2         CUS_FLD_PRBT_FLAG       INT [0] 0
+2         CUS_FLD_PREV_LIFECYCLE_STATE    STR [0] "103"
+2         CUS_FLD_PREV_STATUS     STR [0] "10102"
+2         CUS_FLD_PRIVATE_NUMBER    STR [0] ""
+2         CUS_FLD_QTQR_FLAG       INT [0] 0
+2         CUS_FLD_SELFCARE_FLAG    INT [0] 0
+2         CUS_FLD_SENDER_ID       STR [0] ""
+2         CUS_FLD_SENDER_ID_TYPE   ENUM [0] 0
+2         CUS_FLD_UNLISTED_DATE TSTAMP [0] (0) &lt;null&gt;
+2         PIN_FLD_PUK1            STR [0] "16411850"
+2         PIN_FLD_PUK2            STR [0] "87243751"
+2         PIN_FLD_USER_NAME       STR [0] ""
+1     PIN_FLD_FIRST_NAME      STR [0] "Westore"
+1     PIN_FLD_LAST_NAME       STR [0] ""
+1     PIN_FLD_PLAN          ARRAY [0] allocated 20, used 8
+2         PIN_FLD_NAME            STR [0] "PrepaidSera"
+2         CUS_FLD_COM_PLAN_NAME    STR [0] "Super Lite"
+2         PIN_FLD_START_T      TSTAMP [0] (1690052400) Sun Jul 23 00:00:00 2023
+2         PIN_FLD_END_T        TSTAMP [0] (0) &lt;null&gt;
+2         PIN_FLD_PACKAGE_ID      INT [0] 39632
+2         CUS_FLD_CHANGEPLAN_ALLOWED    INT [0] 0
+2         CUS_FLD_PLAN_TYPE      ENUM [0] 1
+2         PIN_FLD_STATUS         ENUM [0] 2
+1     CUS_FLD_SUSPENSION_STATUS  ARRAY [0] allocated 20, used 5
+2         PIN_FLD_END_T        TSTAMP [0] (0) &lt;null&gt;
+2         PIN_FLD_ORDER_ID        STR [0] "01107180"
+2         PIN_FLD_REASON         ENUM [0] 8
+2         PIN_FLD_START_T      TSTAMP [0] (1732640480) Tue Nov 26 22:01:20 2024
+2         PIN_FLD_STATUS         ENUM [0] 3
+1     PIN_FLD_STATUS_STR      STR [0] "Stage 3 by Fraud Management and Revenue Assurance"
+1     PIN_FLD_NEW_VALUE       STR [0] "Stage 3 by Fraud Management and Revenue Assurance"
+0 PIN_FLD_STATUS         ENUM [0] 0
+</msg>
+<arg>Response:${\n}${output}${\n}</arg>
+<arg>append=${True}</arg>
+<doc>Sets message for the current test case.</doc>
+<status status="PASS" start="2025-04-22T12:12:28.155316" elapsed="0.001500"/>
+</kw>
+<kw name="Runner Validate" owner="runner_validate">
+<msg time="2025-04-22T12:12:33.010168" level="INFO">select count(*) from account_t where account_no='BA00908631' ('BA00908631',)
+1
+*********************************
+TEST CASE : 1
+QUERY : 1---&gt;select count(*) from account_t where account_no='BA00908631'
+TEST CASE QUERY STATUS :SUCCESS
+*********************************
+=========SUMMARY STARTS===================================
+TEST CASE DATA :{1;Validate customer search;PIN_FLD_RESULTS_CUS_FLD_BA_ACCOUNT_NO,account_t.account_no;}
+TEST CASE NUMBER :1
+TEST CASE NAME :Validate customer search
+OVERALL TEST CASE STATUS SUMMARY :SUCCESS
+==========SUMMARY ENDS=========================================</msg>
+<msg time="2025-04-22T12:12:33.010639" level="INFO">${status} = 0</msg>
+<var>${status}</var>
+<arg>${opcodename}</arg>
+<arg>${key}</arg>
+<status status="PASS" start="2025-04-22T12:12:28.157207" elapsed="4.853522"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-04-22T12:12:33.011998" level="INFO">0</msg>
+<arg>${status}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-04-22T12:12:33.011419" elapsed="0.000724"/>
+</kw>
+<if>
+<branch type="IF" condition="${status}== 1">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>"This is the message from status condition clear";</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-22T12:12:33.013413" elapsed="0.000078"/>
+</kw>
+<kw name="Run Keyword" owner="BuiltIn">
+<arg>fail</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="NOT RUN" start="2025-04-22T12:12:33.013884" elapsed="0.000062"/>
+</kw>
+<status status="NOT RUN" start="2025-04-22T12:12:33.012661" elapsed="0.001390"/>
+</branch>
+<status status="PASS" start="2025-04-22T12:12:33.012464" elapsed="0.001690"/>
+</if>
+<arg>${filename}</arg>
+<arg>${opcodename}</arg>
+<arg>${key}</arg>
+<status status="PASS" start="2025-04-22T12:12:22.907512" elapsed="10.106859"/>
+</kw>
+<arg>cusopsearch201.yaml.template</arg>
+<arg>1</arg>
+<arg>cusopsearch201</arg>
+<status status="PASS" start="2025-04-22T12:12:22.900073" elapsed="10.114466"/>
+</kw>
+<doc>CUS_OP_SEARCH_201 with Valid Data 1</doc>
+<status status="PASS" start="2025-04-22T12:12:22.898478" elapsed="10.116347">Request:
+
+r &lt;&lt; 1 1
+0 PIN_FLD_POID                       POID [0] 0.0.0.1 /account -1 0
+0 PIN_FLD_USER_NAME                  STR [0] "ora_support"
+0 PIN_FLD_PROGRAM_NAME               STR [0] "OAP"
+0 PIN_FLD_PARAM_NAME                 STR [0] "Mobile"
+0 PIN_FLD_FLAGS                      INT [0] 201
+0 PIN_FLD_PARAMS                     ARRAY [0] allocated 1, used 1
+1     PIN_FLD_VALUE                  STR [0] "MN16416961"
+1
+xop CUS_OP_SEARCH 0 1
+
+ Response:
+
+xop: opcode 20101, flags 0
+# number of field entries allocated 20, used 3
+0 PIN_FLD_POID           POID [0] 0.0.0.1 /search -1 0
+0 PIN_FLD_RESULTS       ARRAY [1] allocated 20, used 18
+1     PIN_FLD_PAY_TYPE       ENUM [0] 1
+1     PIN_FLD_SERVICE_ID      STR [0] "MN16416961"
+1     PIN_FLD_STATUS         ENUM [0] 10100
+1     PIN_FLD_LIFECYCLE_STATE    INT [0] 102
+1     PIN_FLD_SERVICE_TYPE    STR [0] "Mobile"
+1     CUS_FLD_BA_ACCOUNT_NO    STR [0] "BA00908631"
+1     CUS_FLD_CA_ACCOUNT_NO    STR [0] "CA01599189"
+1     PIN_FLD_ACCOUNT_NO      STR [0] "NPC01596276"
+1     PIN_FLD_DEVICE_ID       STR [0] "9607896988"
+1     PIN_FLD_ALIAS_LIST    ARRAY [0] allocated 20, used 3
+2         PIN_FLD_SIM             STR [0] "89960013041150334199"
+2         PIN_FLD_IMSI            STR [0] "472010015033419"
+2         PIN_FLD_IMEI            STR [0] ""
+1     PIN_FLD_SERVICE_STATE_EXPIRATION_T TSTAMP [0] (1715453999) Sat May 11 23:59:59 2024
+1     CUS_FLD_SRVC_ATTRIBUTE  ARRAY [0] allocated 26, used 26
+2         CUS_FLD_BAD_PIN_COUNT    INT [0] 0
+2         CUS_FLD_DEVICE_MODEL    STR [0] ""
+2         CUS_FLD_DEVICE_TYPE    ENUM [0] 2
+2         CUS_FLD_DIRECTORY_UNLIST    INT [0] 0
+2         CUS_FLD_FIRST_CALL_TIME TSTAMP [0] (1500750000) Sun Jul 23 00:00:00 2017
+2         CUS_FLD_LAST_PYMT_T  TSTAMP [0] (1711557288) Wed Mar 27 21:34:48 2024
+2         CUS_FLD_LCMS_FLAG       INT [0] 0
+2         CUS_FLD_LEGACY_SERVICE_NO    STR [0] "271788509999"
+2         CUS_FLD_MNP_FLAG        INT [0] 0
+2         CUS_FLD_MOBAPP_FLAG     INT [0] 0
+2         CUS_FLD_MOBMONEY_FLAG    INT [0] 0
+2         CUS_FLD_NICE           ENUM [0] 0
+2         CUS_FLD_NICE_CATEGORY    STR [0] ""
+2         CUS_FLD_OLD_SIM         STR [0] "0"
+2         CUS_FLD_PRBT_FLAG       INT [0] 0
+2         CUS_FLD_PREV_LIFECYCLE_STATE    STR [0] "103"
+2         CUS_FLD_PREV_STATUS     STR [0] "10102"
+2         CUS_FLD_PRIVATE_NUMBER    STR [0] ""
+2         CUS_FLD_QTQR_FLAG       INT [0] 0
+2         CUS_FLD_SELFCARE_FLAG    INT [0] 0
+2         CUS_FLD_SENDER_ID       STR [0] ""
+2         CUS_FLD_SENDER_ID_TYPE   ENUM [0] 0
+2         CUS_FLD_UNLISTED_DATE TSTAMP [0] (0) &lt;null&gt;
+2         PIN_FLD_PUK1            STR [0] "16411850"
+2         PIN_FLD_PUK2            STR [0] "87243751"
+2         PIN_FLD_USER_NAME       STR [0] ""
+1     PIN_FLD_FIRST_NAME      STR [0] "Westore"
+1     PIN_FLD_LAST_NAME       STR [0] ""
+1     PIN_FLD_PLAN          ARRAY [0] allocated 20, used 8
+2         PIN_FLD_NAME            STR [0] "PrepaidSera"
+2         CUS_FLD_COM_PLAN_NAME    STR [0] "Super Lite"
+2         PIN_FLD_START_T      TSTAMP [0] (1690052400) Sun Jul 23 00:00:00 2023
+2         PIN_FLD_END_T        TSTAMP [0] (0) &lt;null&gt;
+2         PIN_FLD_PACKAGE_ID      INT [0] 39632
+2         CUS_FLD_CHANGEPLAN_ALLOWED    INT [0] 0
+2         CUS_FLD_PLAN_TYPE      ENUM [0] 1
+2         PIN_FLD_STATUS         ENUM [0] 2
+1     CUS_FLD_SUSPENSION_STATUS  ARRAY [0] allocated 20, used 5
+2         PIN_FLD_END_T        TSTAMP [0] (0) &lt;null&gt;
+2         PIN_FLD_ORDER_ID        STR [0] "01107180"
+2         PIN_FLD_REASON         ENUM [0] 8
+2         PIN_FLD_START_T      TSTAMP [0] (1732640480) Tue Nov 26 22:01:20 2024
+2         PIN_FLD_STATUS         ENUM [0] 3
+1     PIN_FLD_STATUS_STR      STR [0] "Stage 3 by Fraud Management and Revenue Assurance"
+1     PIN_FLD_NEW_VALUE       STR [0] "Stage 3 by Fraud Management and Revenue Assurance"
+0 PIN_FLD_STATUS         ENUM [0] 0
+
+</status>
+</test>
+<kw name="Close All Connections" owner="SSHLibrary" type="TEARDOWN">
+<doc>Closes all open connections.</doc>
+<status status="PASS" start="2025-04-22T12:12:33.016709" elapsed="0.001823"/>
+</kw>
+<doc>Requesting General opcode and validating the response</doc>
+<status status="PASS" start="2025-04-22T12:12:08.946117" elapsed="24.072602"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Api" id="s1" pass="1" fail="0" skip="0">Api</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

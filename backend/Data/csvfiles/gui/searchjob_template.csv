@@ -1,0 +1,4 @@
+no,testcase,nav-link,page-title-box,searchInput,choices__item[1],choices__item[2],btn-check
+1,TC_BR_Search_001,Jobs,Job Description,,Active,Accenture,All
+2,TC_BR_Search_002,Jobs,Job Description,,Active,BRT,All
+3,TC_BR_Search_003,Jobs,Job Description,JD000231,All,Select Client,All

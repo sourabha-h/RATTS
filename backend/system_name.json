@@ -1,0 +1,11 @@
+{
+"OEP":{
+    "oepsoaptemplates": "OEP SOAP"},
+"BRM":{
+    "opcodetemplates": "OPCODE",
+    "soaptemplates": "SOAP"
+   },  
+"GUI":{
+        "guitemplates":"BLUERISE"}
+    
+}

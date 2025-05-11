@@ -1,0 +1,3 @@
+0 PIN_FLD_POID                      POID [0] ${PIN_FLD_POID}
+0 PIN_FLD_ARGS          ARRAY [1] allocated 1, used 1
+1   PIN_FLD_ACCOUNT_NO  STR [0] "${PIN_FLD_ACCOUNT_NO}"

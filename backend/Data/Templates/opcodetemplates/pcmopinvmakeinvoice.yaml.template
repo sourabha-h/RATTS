@@ -1,0 +1,4 @@
+r << 1 1
+0 PIN_FLD_POID           POID [0] ${poid}
+1
+xop 953 0 1

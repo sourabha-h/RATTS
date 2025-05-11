@@ -1,0 +1,9 @@
+r << 1 1
+0 PIN_FLD_POID           POID [0] 0.0.0.1 /account -1 0
+0 PIN_FLD_ACCOUNT_NO      STR [0] "N"
+0 PIN_FLD_NAME            STR [0] "None"
+0 PIN_FLD_SERVICE_ID      STR [0] "None"
+0 PIN_FLD_USER_NAME       STR [0] "None"
+0 PIN_FLD_PROGRAM_NAME    STR [0] "OAP"
+1
+xop CUS_OP_CUST_VALIDATE_CHANGE_PLAN 0 1

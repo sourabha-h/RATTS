@@ -1,0 +1,11 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+            xmlns:bus="http://xmlns.oracle.com/BRM/schemas/BusinessOpcodes/">
+            <soapenv:Header/>
+                <soapenv:Body>
+                    <bus:opcode>
+                        <opcodeName>CUS_OP_SEARCH</opcodeName>
+                        <inputXml><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<CUS_OP_SEARCH_inputFlist><PARAMS elem="0"><VALUE>MN11006046</VALUE></PARAMS><POID>0.0.0.1 /account -1 0</POID><PROGRAM_NAME>OAP</PROGRAM_NAME><PARAM_NAME>Mobile</PARAM_NAME><FLAGS>201</FLAGS><USER_NAME>ora_support</USER_NAME></CUS_OP_SEARCH_inputFlist>]]></inputXml>
+                    </bus:opcode>
+                </soapenv:Body>
+       </soapenv:Envelope>

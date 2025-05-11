@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2 (Python 3.13.1 on win32)" generated="2025-04-22T13:13:42.229235" rpa="false" schemaversion="5">
+<suite id="s1" name="Soap Test Validation">
+<test id="s1-t1" name="ModifyMobileBroadbandService-ChangePlan Valid Case1">
+<kw name="Check soap call" owner="oepsoapresources">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-22T13:13:44.627428" level="INFO">${arg} = oep</msg>
+<var>${arg}</var>
+<arg>oep</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-22T13:13:44.627117" elapsed="0.000364"/>
+</kw>
+<kw name="Generate Request" owner="soaprequestgeneration">
+<msg time="2025-04-22T13:13:44.629776" level="INFO">oep</msg>
+<arg>${Templatename}</arg>
+<arg>${key}</arg>
+<arg>${arg}</arg>
+<status status="PASS" start="2025-04-22T13:13:44.628112" elapsed="0.001775"/>
+</kw>
+<kw name="Call Soap Method" owner="oepsoapresources">
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2025-04-22T13:13:44.632390" level="INFO">Creating Session using : alias=soapsession, url=http://192.168.209.159:7779/, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>soapsession</arg>
+<arg>${oep_base_url}</arg>
+<arg>disable_warnings=1</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2025-04-22T13:13:44.631844" elapsed="0.001353"/>
+</kw>
+<kw name="Get File" owner="OperatingSystem">
+<msg time="2025-04-22T13:13:44.634713" level="INFO" html="true">Getting file '&lt;a href="file://D:\RATTS_bluerise\RATTS\backend\Data\Input\oepsoapRequestXmls\oepsoaprequest.xml"&gt;D:\RATTS_bluerise\RATTS\backend\Data\Input\oepsoapRequestXmls\oepsoaprequest.xml&lt;/a&gt;'.</msg>
+<msg time="2025-04-22T13:13:44.638096" level="INFO">${SOAP_XML} = &lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://dhiraagu.com.mv/OEP/OrderManagement/Order/V1"&gt;
+   &lt;soapenv:Header/&gt;
+   &lt;soapenv:Body&gt;
+      &lt;v1:OrderEntryR...</msg>
+<var>${SOAP_XML}</var>
+<arg>Data/Input/oepsoapRequestXmls${/}oepsoaprequest.xml</arg>
+<doc>Returns the contents of a specified file.</doc>
+<status status="PASS" start="2025-04-22T13:13:44.633890" elapsed="0.004573"/>
+</kw>
+<kw name="Set Test Message" owner="BuiltIn">
+<msg time="2025-04-22T13:13:44.640149" level="INFO">Set test message to:
+Request:
+&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://dhiraagu.com.mv/OEP/OrderManagement/Order/V1"&gt;
+   &lt;soapenv:Header/&gt;
+   &lt;soapenv:Body&gt;
+      &lt;v1:OrderEntryRequest&gt;
+         &lt;v1:ProcessModifyOrder&gt;
+            &lt;v1:ListOfOEPOrder&gt;
+               &lt;v1:OEPOrder&gt;
+                  &lt;v1:CUS_FLD_CONTACTS&gt;
+                     &lt;v1:CUS_FLD_EMAIL&gt;dr.raghavendra.m@gmail.com&lt;/v1:CUS_FLD_EMAIL&gt;
+                     &lt;v1:PHONE&gt;7500946&lt;/v1:PHONE&gt;
+                  &lt;/v1:CUS_FLD_CONTACTS&gt;
+                  &lt;v1:MobileBBService&gt;
+                     &lt;v1:ChangePlan&gt;
+                        &lt;v1:AccountNo&gt;PC00072251&lt;/v1:AccountNo&gt;
+                        &lt;v1:MsIsdn&gt;9607660946&lt;/v1:MsIsdn&gt;
+                        &lt;v1:Plan&gt;
+                           &lt;v1:PlanName&gt;PostBroadband699&lt;/v1:PlanName&gt;
+                           &lt;v1:PlanStartDate&gt;2025-01-23&lt;/v1:PlanStartDate&gt;
+                           &lt;v1:PlanAction&gt;Change&lt;/v1:PlanAction&gt;
+                        &lt;/v1:Plan&gt;
+                        &lt;v1:OrderName&gt;ModifyMobileBroadbandService-ChangePlan&lt;/v1:OrderName&gt;
+                        &lt;v1:OrderAction&gt;ModifyMobileBroadbandService-ChangePlan&lt;/v1:OrderAction&gt;
+                        &lt;v1:OrderStartDate&gt;2025-01-23&lt;/v1:OrderStartDate&gt;
+                        &lt;v1:OrderUserId&gt;brt_support&lt;/v1:OrderUserId&gt;
+                        &lt;v1:ChannelTrackingId&gt;1729599674&lt;/v1:ChannelTrackingId&gt;
+                        &lt;v1:CreditScore&gt;1&lt;/v1:CreditScore&gt;
+                        &lt;v1:SpendingCapMin&gt;1498&lt;/v1:SpendingCapMin&gt;
+                        &lt;v1:SpendingCapMax&gt;2996&lt;/v1:SpendingCapMax&gt;
+                        &lt;v1:SpendingCap&gt;2247&lt;/v1:SpendingCap&gt;
+                        &lt;v1:DepositPayment&gt;
+                           &lt;v1:CollectedOn&gt;2025-10-23T17:21:14&lt;/v1:CollectedOn&gt;
+                           &lt;v1:DepositAmount&gt;1000&lt;/v1:DepositAmount&gt;
+                           &lt;v1:WaveOff&gt;1&lt;/v1:WaveOff&gt;
+                           &lt;v1:WaveOffReason&gt;Employment Letter&lt;/v1:WaveOffReason&gt;
+                           &lt;v1:DepositReceiptNo&gt;NA&lt;/v1:DepositReceiptNo&gt;
+                           &lt;v1:DepositType&gt;0&lt;/v1:DepositType&gt;
+                           &lt;v1:ServiceType&gt;BB&lt;/v1:ServiceType&gt;
+                           &lt;v1:PlanName&gt;PostBroadband699&lt;/v1:PlanName&gt;
+                           &lt;v1:DepositWaiver&gt;1000&lt;/v1:DepositWaiver&gt;
+                        &lt;/v1:DepositPayment&gt;
+                     &lt;/v1:ChangePlan&gt;
+                  &lt;/v1:MobileBBService&gt;
+               &lt;/v1:OEPOrder&gt;
+            &lt;/v1:ListOfOEPOrder&gt;
+         &lt;/v1:ProcessModifyOrder&gt;
+      &lt;/v1:OrderEntryRequest&gt;
+   &lt;/soapenv:Body&gt;
+&lt;/soapenv:Envelope&gt;
+</msg>
+<arg>Request:${\n}${SOAP_XML}${\n}</arg>
+<arg>append=${True}</arg>
+<doc>Sets message for the current test case.</doc>
+<status status="PASS" start="2025-04-22T13:13:44.639152" elapsed="0.001124"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-04-22T13:13:44.642934" level="INFO">${request_header} = {'Content-Type': 'text/xml; charset=utf-8', 'User-Agent': 'Apache-HttpClient/4.1.1'}</msg>
+<var>${request_header}</var>
+<arg>Content-Type=text/xml; charset=utf-8</arg>
+<arg>User-Agent=Apache-HttpClient/4.1.1</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-04-22T13:13:44.640989" elapsed="0.002083"/>
+</kw>
+<kw name="POST On Session" owner="RequestsLibrary">
+<msg time="2025-04-22T13:13:47.710877" level="INFO">POST Request : url=http://192.168.209.159:7779/OrderEntryWebservice-1.0/orderentry 
+ path_url=/OrderEntryWebservice-1.0/orderentry 
+ headers={'User-Agent': 'Apache-HttpClient/4.1.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'text/xml; charset=utf-8', 'Content-Length': '2621'} 
+ body=&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://dhiraagu.com.mv/OEP/OrderManagement/Order/V1"&gt;
+   &lt;soapenv:Header/&gt;
+   &lt;soapenv:Body&gt;
+      &lt;v1:OrderEntryRequest&gt;
+         &lt;v1:ProcessModifyOrder&gt;
+            &lt;v1:ListOfOEPOrder&gt;
+               &lt;v1:OEPOrder&gt;
+                  &lt;v1:CUS_FLD_CONTACTS&gt;
+                     &lt;v1:CUS_FLD_EMAIL&gt;dr.raghavendra.m@gmail.com&lt;/v1:CUS_FLD_EMAIL&gt;
+                     &lt;v1:PHONE&gt;7500946&lt;/v1:PHONE&gt;
+                  &lt;/v1:CUS_FLD_CONTACTS&gt;
+                  &lt;v1:MobileBBService&gt;
+                     &lt;v1:ChangePlan&gt;
+                        &lt;v1:AccountNo&gt;PC00072251&lt;/v1:AccountNo&gt;
+                        &lt;v1:MsIsdn&gt;9607660946&lt;/v1:MsIsdn&gt;
+                        &lt;v1:Plan&gt;
+                           &lt;v1:PlanName&gt;PostBroadband699&lt;/v1:PlanName&gt;
+                           &lt;v1:PlanStartDate&gt;2025-01-23&lt;/v1:PlanStartDate&gt;
+                           &lt;v1:PlanAction&gt;Change&lt;/v1:PlanAction&gt;
+                        &lt;/v1:Plan&gt;
+                        &lt;v1:OrderName&gt;ModifyMobileBroadbandService-ChangePlan&lt;/v1:OrderName&gt;
+                        &lt;v1:OrderAction&gt;ModifyMobileBroadbandService-ChangePlan&lt;/v1:OrderAction&gt;
+                        &lt;v1:OrderStartDate&gt;2025-01-23&lt;/v1:OrderStartDate&gt;
+                        &lt;v1:OrderUserId&gt;brt_support&lt;/v1:OrderUserId&gt;
+                        &lt;v1:ChannelTrackingId&gt;1729599674&lt;/v1:ChannelTrackingId&gt;
+                        &lt;v1:CreditScore&gt;1&lt;/v1:CreditScore&gt;
+                        &lt;v1:SpendingCapMin&gt;1498&lt;/v1:SpendingCapMin&gt;
+                        &lt;v1:SpendingCapMax&gt;2996&lt;/v1:SpendingCapMax&gt;
+                        &lt;v1:SpendingCap&gt;2247&lt;/v1:SpendingCap&gt;
+                        &lt;v1:DepositPayment&gt;
+                           &lt;v1:CollectedOn&gt;2025-10-23T17:21:14&lt;/v1:CollectedOn&gt;
+                           &lt;v1:DepositAmount&gt;1000&lt;/v1:DepositAmount&gt;
+                           &lt;v1:WaveOff&gt;1&lt;/v1:WaveOff&gt;
+                           &lt;v1:WaveOffReason&gt;Employment Letter&lt;/v1:WaveOffReason&gt;
+                           &lt;v1:DepositReceiptNo&gt;NA&lt;/v1:DepositReceiptNo&gt;
+                           &lt;v1:DepositType&gt;0&lt;/v1:DepositType&gt;
+                           &lt;v1:ServiceType&gt;BB&lt;/v1:ServiceType&gt;
+                           &lt;v1:PlanName&gt;PostBroadband699&lt;/v1:PlanName&gt;
+                           &lt;v1:DepositWaiver&gt;1000&lt;/v1:DepositWaiver&gt;
+                        &lt;/v1:DepositPayment&gt;
+                     &lt;/v1:ChangePlan&gt;
+                  &lt;/v1:MobileBBService&gt;
+               &lt;/v1:OEPOrder&gt;
+            &lt;/v1:ListOfOEPOrder&gt;
+         &lt;/v1:ProcessModifyOrder&gt;
+      &lt;/v1:OrderEntryRequest&gt;
+   &lt;/soapenv:Body&gt;
+&lt;/soapenv:Envelope&gt; 
+ </msg>
+<msg time="2025-04-22T13:13:47.711717" level="INFO">POST Response : url=http://192.168.209.159:7779/OrderEntryWebservice-1.0/orderentry 
+ status=200, reason=OK 
+ headers={'Date': 'Tue, 22 Apr 2025 07:43:39 GMT', 'Server': 'Oracle-HTTP-Server', 'Content-Length': '555', 'X-ORACLE-DMS-ECID': '006Cp^^^pwxBDCYVLqESOA0001^I000P20', 'X-ORACLE-DMS-RID': '0:1', 'SOAPAction': '""', 'Accept': 'text/xml', 'Keep-Alive': 'timeout=5, max=100', 'Connection': 'Keep-Alive', 'Content-Type': 'text/xml; charset=UTF-8'} 
+ body=&lt;env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"&gt;&lt;env:Header Content-Type="application/xml"/&gt;&lt;env:Body&gt;&lt;OrderEntryResponse xmlns="http://dhiraagu.com.mv/OEP/OrderManagement/Order/V1"&gt;
+   &lt;ProcessOrderResponse&gt;
+      &lt;ListOfOEPOrderResponse&gt;
+         &lt;OEPOrderResponse&gt;
+            &lt;StatusCode&gt;01&lt;/StatusCode&gt;
+            &lt;StatusDescription&gt;Service is suspended, order not allowed.&lt;/StatusDescription&gt;
+         &lt;/OEPOrderResponse&gt;
+      &lt;/ListOfOEPOrderResponse&gt;
+   &lt;/ProcessOrderResponse&gt;
+&lt;/OrderEntryResponse&gt;&lt;/env:Body&gt;&lt;/env:Envelope&gt; 
+ </msg>
+<msg time="2025-04-22T13:13:47.712091" level="INFO">${SAVE_Response} = &lt;Response [200]&gt;</msg>
+<var>${SAVE_Response}</var>
+<arg>soapsession</arg>
+<arg>${oep_channel_url}</arg>
+<arg>headers=${request_header}</arg>
+<arg>data=${SOAP_XML}</arg>
+<doc>Sends a POST request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2025-04-22T13:13:44.643757" elapsed="3.068412"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-04-22T13:13:47.714821" level="INFO">${xml_response} = &lt;env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"&gt;&lt;env:Header Content-Type="application/xml"/&gt;&lt;env:Body&gt;&lt;OrderEntryResponse xmlns="http://dhiraagu.com.mv/OEP/OrderManagement/Order/V1...</msg>
+<var>${xml_response}</var>
+<arg>${SAVE_Response.content}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-04-22T13:13:47.712636" elapsed="0.002294"/>
+</kw>
+<kw name="Get Status Code" owner="oep_validate">
+<msg time="2025-04-22T13:13:47.716916" level="INFO">${status} = 01</msg>
+<var>${status}</var>
+<arg>${xml_response}</arg>
+<status status="PASS" start="2025-04-22T13:13:47.715489" elapsed="0.001545"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>StatusCode: ${status}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-22T13:13:47.717789" elapsed="0.000837"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${status}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-22T13:13:47.719232" elapsed="0.000600"/>
+</kw>
+<kw name="Should Not Be Empty" owner="BuiltIn">
+<msg time="2025-04-22T13:13:47.720767" level="INFO">Length is 2.</msg>
+<msg time="2025-04-22T13:13:47.721073" level="INFO">${success} = None</msg>
+<var>${success}</var>
+<arg>${status}</arg>
+<doc>Verifies that the given item is not empty.</doc>
+<status status="PASS" start="2025-04-22T13:13:47.720315" elapsed="0.000897"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${success}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-22T13:13:47.721719" elapsed="0.000630"/>
+</kw>
+<if>
+<branch type="IF" condition="${status} == &quot;00&quot;">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>SUCCESS</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-22T13:13:47.723721" elapsed="0.000100"/>
+</kw>
+<msg time="2025-04-22T13:13:47.724038" level="FAIL">Invalid IF condition: Evaluating expression '01 == "00"' failed: SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers (&lt;string&gt;, line 1)
+
+Variables in the original expression '${status} == "00"' were resolved before the expression was evaluated. Try using '$status == "00"' syntax to avoid that. See Evaluating Expressions appendix in Robot Framework User Guide for more details.</msg>
+<status status="FAIL" start="2025-04-22T13:13:47.722732" elapsed="0.001521">Invalid IF condition: Evaluating expression '01 == "00"' failed: SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers (&lt;string&gt;, line 1)
+
+Variables in the original expression '${status} == "00"' were resolved before the expression was evaluated. Try using '$status == "00"' syntax to avoid that. See Evaluating Expressions appendix in Robot Framework User Guide for more details.</status>
+</branch>
+<branch type="ELSE">
+<kw name="Get Status Description" owner="oep_validate">
+<var>${status_desc}</var>
+<arg>${xml_response}</arg>
+<status status="NOT RUN" start="2025-04-22T13:13:47.724895" elapsed="0.000097"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${status_desc}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-22T13:13:47.725447" elapsed="0.000147"/>
+</kw>
+<kw name="Fail" owner="BuiltIn">
+<arg>(${status_desc} )</arg>
+<doc>Fails the test with the given message and optionally alters its tags.</doc>
+<status status="NOT RUN" start="2025-04-22T13:13:47.726227" elapsed="0.000102"/>
+</kw>
+<status status="NOT RUN" start="2025-04-22T13:13:47.724496" elapsed="0.001996"/>
+</branch>
+<status status="FAIL" start="2025-04-22T13:13:47.722640" elapsed="0.003975">Invalid IF condition: Evaluating expression '01 == "00"' failed: SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers (&lt;string&gt;, line 1)
+
+Variables in the original expression '${status} == "00"' were resolved before the expression was evaluated. Try using '$status == "00"' syntax to avoid that. See Evaluating Expressions appendix in Robot Framework User Guide for more details.</status>
+</if>
+<kw name="Set Test Message" owner="BuiltIn">
+<arg>Response:${\n}${xml_response}${\n}</arg>
+<arg>append=${True}</arg>
+<doc>Sets message for the current test case.</doc>
+<status status="NOT RUN" start="2025-04-22T13:13:47.727292" elapsed="0.000132"/>
+</kw>
+<status status="FAIL" start="2025-04-22T13:13:44.630634" elapsed="3.097306">Invalid IF condition: Evaluating expression '01 == "00"' failed: SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers (&lt;string&gt;, line 1)
+
+Variables in the original expression '${status} == "00"' were resolved before the expression was evaluated. Try using '$status == "00"' syntax to avoid that. See Evaluating Expressions appendix in Robot Framework User Guide for more details.</status>
+</kw>
+<arg>modifymobilebroadbandservicechangeplan.json</arg>
+<arg>modifymobilebroadbandservicechangeplan.yaml.template</arg>
+<arg>ModifyMobileBroadbandService-ChangePlan</arg>
+<arg>1</arg>
+<status status="FAIL" start="2025-04-22T13:13:44.624414" elapsed="3.103778">Invalid IF condition: Evaluating expression '01 == "00"' failed: SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers (&lt;string&gt;, line 1)
+
+Variables in the original expression '${status} == "00"' were resolved before the expression was evaluated. Try using '$status == "00"' syntax to avoid that. See Evaluating Expressions appendix in Robot Framework User Guide for more details.</status>
+</kw>
+<doc>ModifyMobileBroadbandService-ChangePlan with Valid Data1</doc>
+<status status="FAIL" start="2025-04-22T13:13:44.622496" elapsed="3.106225">Invalid IF condition: Evaluating expression '01 == "00"' failed: SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers (&lt;string&gt;, line 1)
+
+Variables in the original expression '${status} == "00"' were resolved before the expression was evaluated. Try using '$status == "00"' syntax to avoid that. See Evaluating Expressions appendix in Robot Framework User Guide for more details.</status>
+</test>
+<doc>Calling API and validating the response</doc>
+<status status="FAIL" start="2025-04-22T13:13:42.234229" elapsed="5.496738"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Soap Test Validation" id="s1" pass="0" fail="1" skip="0">Soap Test Validation</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

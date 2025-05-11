@@ -1,0 +1,10 @@
+r << 1 1
+0 PIN_FLD_POID                       POID [0] ${PIN_FLD_POID}
+0 PIN_FLD_USER_NAME                  STR [0] "${PIN_FLD_USER_NAME}"
+0 PIN_FLD_PROGRAM_NAME               STR [0] "OAP"
+0 PIN_FLD_PARAM_NAME                 STR [0] "${PIN_FLD_PARAM_NAME}"
+0 PIN_FLD_FLAGS                      INT [0] ${PIN_FLD_FLAGS}
+0 PIN_FLD_PARAMS                     ARRAY [0] allocated 1, used 1
+1     PIN_FLD_VALUE                  STR [0] "${PIN_FLD_VALUE}"
+1
+xop CUS_OP_SEARCH 0 1

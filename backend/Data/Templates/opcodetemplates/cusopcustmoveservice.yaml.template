@@ -1,0 +1,11 @@
+r << 1 1
+0 PIN_FLD_POID                      POID [0] ${poid}
+0 PIN_FLD_SERVICE_ID                 STR [0] "${serviceid}"
+0 PIN_FLD_PROGRAM_NAME               STR [0] "OAP"
+0 PIN_FLD_SOURCE                     STR [0] "${source}"
+0 PIN_FLD_REASON_CODE                STR [0] "${reasoncode}"
+0 PIN_FLD_ACCOUNT_NO                 STR [0] "${baaccountno}"
+0 PIN_FLD_FLAGS                      INT [0] ${flags}
+0 PIN_FLD_USER_NAME                  STR [0] "${username}"
+1
+xop CUS_OP_CUST_MOVE_SERVICE 0 1

@@ -1,0 +1,2 @@
+1;Subscription Cancel Deal Event verification;PIN_FLD_RESULTS_PIN_FLD_POID,event_t.poid_id0;
+2;Subscription cancelled account poid verification;PIN_FLD_RESULTS_PIN_FLD_ACCOUNT_OBJ,event_t.account_obj_id0;

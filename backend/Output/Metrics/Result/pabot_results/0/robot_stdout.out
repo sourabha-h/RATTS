@@ -1,0 +1,59 @@
+==============================================================================
+Generated Suite                                                               
+==============================================================================
+Generated Suite.User1                                                         
+==============================================================================
+Generated Suite.User1.Test Suite :: Gui Resources                             
+==============================================================================
+Login | BlueRise
+Type of objdata: dict
+{'username': 'rajeswari@bluerose-tech.com', 'password-input': 'U238Vr%*7i3Lgab', 'page-title-box': 'Overview'}
+--- YAML Data ---
+input   text         id  {username}
+input   password     id  {password-input}
+button  submit       class  btn-success
+page   div        class   {page-title-box}
+--- YAML List ---
+[{'tag': 'input', 'type': 'text', 'selector': 'id', 'name': '{username}'}, {'tag': 'input', 'type': 'password', 'selector': 'id', 'name': '{password-input}'}, {'tag': 'button', 'type': 'submit', 'selector': 'class', 'name': 'btn-success'}, {'tag': 'page', 'type': 'div', 'selector': 'class', 'name': '{page-title-box}'}]
+--- JSON Data ---
+{'username': 'rajeswari@bluerose-tech.com', 'password-input': 'U238Vr%*7i3Lgab', 'page-title-box': 'Overview'}
+{username}
+True
+username
+{password-input}
+True
+password-input
+btn-success
+element clicked
+{page-title-box}
+{page-title-box}
+True
+Manager Test Case for login TC_BR_Login_001 TC_BR_DR_001 :: Manage... Type of objdata: dict
+{'nav-item': 'Team Stats', 'page-title-box': 'Manager Dashboard'}
+--- YAML Data ---
+a   nav-link   class   {nav-item}
+page   div        class   {page-title-box}
+--- YAML List ---
+[{'tag': 'a', 'type': 'nav-link', 'selector': 'class', 'name': '{nav-item}'}, {'tag': 'page', 'type': 'div', 'selector': 'class', 'name': '{page-title-box}'}]
+--- JSON Data ---
+{'nav-item': 'Team Stats', 'page-title-box': 'Manager Dashboard'}
+Link name is {nav-item}
+A Tag name is {nav-item}
+True
+{nav-item}
+True
+{page-title-box}
+{page-title-box}
+True
+| PASS |
+------------------------------------------------------------------------------
+Generated Suite.User1.Test Suite :: Gui Resources                     | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+Generated Suite.User1                                                 | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+Generated Suite                                                       | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+Output:  D:\RATTS_bluerise\RATTS\backend\Output\Metrics\Result\pabot_results\0\output.xml

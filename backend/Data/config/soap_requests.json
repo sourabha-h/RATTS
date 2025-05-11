@@ -1,0 +1,9 @@
+{
+    "operation":{
+       "search_201":"CUS_OP_SEARCH_201",
+        "view_charges":"CUS_OP_INTEG_VIEW_OTHER_CHARGES",
+        "view_bill":"CUS_OP_BILL_POL_VIEW_BILL"
+    }
+  
+   
+}

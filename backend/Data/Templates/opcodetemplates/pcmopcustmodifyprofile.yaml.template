@@ -1,0 +1,10 @@
+r << 1 1
+0 PIN_FLD_POID           POID [0] ${poid}
+0 PIN_FLD_PROFILES      ARRAY [0] allocated 20, used 2
+1     PIN_FLD_PROFILE_OBJ    POID [0] ${profile_obj}
+1     PIN_FLD_INHERITED_INFO SUBSTRUCT [0] allocated 20, used 1
+2         PIN_FLD_PROFILES      ARRAY [0] allocated 20, used 2
+3             CUS_FLD_CREDIT_SCORE DECIMAL [0] ${creditscore}
+3             CUS_FLD_CREDIT_CLASS    STR [0] "${creditclass}"
+1
+xop PCM_OP_CUST_MODIFY_PROFILE 0 1

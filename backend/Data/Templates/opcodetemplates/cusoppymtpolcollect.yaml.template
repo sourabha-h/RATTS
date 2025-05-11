@@ -1,0 +1,25 @@
+r << 1 1
+0 PIN_FLD_POID           POID [0] ${poid}
+0 PIN_FLD_ACCOUNTS      ARRAY [0] allocated 20, used 9
+1     PIN_FLD_AMOUNT       DECIMAL [0] ${amount}
+1     PIN_FLD_PAYMENT      SUBSTRUCT [0] allocated 20, used 8
+2         PIN_FLD_CHECK_NO        STR [0] "${checkno}"
+2         PIN_FLD_NAME            STR [0] "${name}"
+2         CUS_FLD_TRANS_NUM       STR [0] "${transnum}"
+2         PIN_FLD_PHONE           STR [0] "${phone}"
+2         PIN_FLD_CURRENCY_NAME    STR [0] "${currency}"
+2         CUS_FLD_TENDER_AMOUNT DECIMAL [0] ${tenderamount}
+2         CUS_FLD_FOREX_CONVERSION_RATE DECIMAL [0] ${forexconversionrate}
+2         CUS_FLD_FOREX_AMOUNT DECIMAL [0] ${forexamount}
+1     PIN_FLD_INDICATOR       INT [0] ${indicator}
+1     PIN_FLD_USER_NAME       STR [0] "${username}"
+1     CUS_FLD_SERVICE_IDENTIFIER    STR [0] "${serviceid}"
+1     CUS_FLD_CASHIER_OFFICE_ID    STR [0] "${officeid}"
+1     CUS_FLD_PYMT_MODE       STR [0] "${paymentmode}"
+1     PIN_FLD_SERVICE_TYPE    STR [0] "${servicetype}"
+1     CUS_FLD_PYMT_TYPE       STR [0] "${paymenttype}"
+0 CUS_FLD_CHANGE_RETURNED DECIMAL [0] ${changereturned}
+0 PIN_FLD_PROGRAM_NAME    STR [0] "OAP"
+0 PIN_FLD_TOTALS       DECIMAL [0] ${totals}
+1
+xop CUS_OP_PYMT_POL_COLLECT 0 1

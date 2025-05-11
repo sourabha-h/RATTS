@@ -1,0 +1,2 @@
+1;Validate adjustment item;PIN_FLD_POID,item_t.POID_ID0;
+2;Validate adjustment event;PIN_FLD_POID,event_t.item_obj_id0;

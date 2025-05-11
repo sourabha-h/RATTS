@@ -1,0 +1,12 @@
+{
+    "urls": {
+        "login": "login.html",
+        "search_job": "index.html",
+        "add_job": "index.html",
+        "edit_job": "index.html",
+        "duplicate_job": "index.html",
+        "status_job": "index.html",
+        "dashboard_recruiter": "index.html",
+        "Manager": "index.html"
+    }
+}

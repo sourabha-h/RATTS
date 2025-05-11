@@ -1,0 +1,7 @@
+r << 1 1
+0 PIN_FLD_POID           POID [0] ${poid}
+0 PIN_FLD_MODE           ENUM [0] ${mode}
+0 PIN_FLD_START_T      TSTAMP [0] (${start_t}) Mon Feb 10 09:49:15 2020
+0 PIN_FLD_LOGIN           STR [0] "${login}"
+1
+xop PCM_OP_BAL_GET_ECE_BALANCES 0 1

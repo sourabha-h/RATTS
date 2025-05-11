@@ -1,0 +1,10 @@
+r << 1 1
+0 PIN_FLD_POID                       POID [0] 0.0.0.1 /account -1 0
+0 PIN_FLD_USER_NAME                  STR [0] "ora_support"
+0 PIN_FLD_PROGRAM_NAME               STR [0] "OAP"
+0 PIN_FLD_PARAM_NAME                 STR [0] "Mobile"
+0 PIN_FLD_FLAGS                      INT [0] 201
+0 PIN_FLD_PARAMS                     ARRAY [0] allocated 1, used 1
+1     PIN_FLD_VALUE                  STR [0] "MN16416961"
+1
+xop CUS_OP_SEARCH 0 1

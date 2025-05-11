@@ -1,0 +1,19 @@
+r << 1 1
+0 PIN_FLD_POID                      POID [0] -
+0 PIN_FLD_PAY_TYPE                  ENUM [0] 1
+0 PIN_FLD_ORDER_ID                   STR [0] "None"
+0 PIN_FLD_SERVICE_ID                 STR [0] "None"
+0 PIN_FLD_PROGRAM_NAME               STR [0] "OAP"
+0 CUS_FLD_CA_ACCOUNT_NO              STR [0] "None"
+0 PIN_FLD_ACCOUNT_NO                 STR [0] "None"
+0 PIN_FLD_MSISDN                     STR [0] "None"
+0 PIN_FLD_USER_NAME                  STR [0] "None"
+0 CUS_FLD_TO_PLAN                  ARRAY [0] allocated 2, used 2
+1     PIN_FLD_NAME                   STR [0] "None"
+1     CUS_FLD_PLAN_TYPE             ENUM [0] None
+0 CUS_FLD_FROM_PLAN                ARRAY [0] allocated 2, used 2
+1     PIN_FLD_NAME                   STR [0] "None"
+1     CUS_FLD_PLAN_TYPE             ENUM [0] None
+0 CUS_FLD_BA_ACCOUNT_NO              STR [0] "None"
+1
+xop CUS_OP_CUST_CHANGE_PLAN 0 1

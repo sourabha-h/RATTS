@@ -1,0 +1,28 @@
+{
+    "opcodes": {
+        "general": {
+            "Search_201": "CUS_OP_SEARCH_201",
+            "View_Bill": "CUS_OP_BILL_POL_VIEW_BILL",
+            "view_usage": "CUS_OP_SUBSCRIPTION_VIEW_USAGE"            
+        },
+        "multitask": {
+            "Change_Plan": [
+                {
+                    "sequence": 1,
+                    "opcode": "CUS_OP_SEARCH",
+                    "loop": 0
+                },
+                {
+                    "sequence": 2,
+                    "opcode": "CUS_OP_CUST_VALIDATE_CHANGE_PLAN",
+                    "loop": 0
+                },
+                {
+                    "sequence": 3,
+                    "opcode": "CUS_OP_CUST_CHANGE_PLAN",
+                    "loop": 0
+                }
+            ]
+        }
+    }
+}

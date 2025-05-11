@@ -1,0 +1,2926 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Rebot 7.2 (Python 3.13.1 on win32)" generated="2025-04-22T16:09:37.107305" rpa="false" schemaversion="5">
+<suite id="s1" name="Api" source="D:\RATTS_bluerise\RATTS\backend\Resource\generated_suite">
+<suite id="s1-s1" name="User1" source="D:\RATTS_bluerise\RATTS\backend\Resource\generated_suite\user1">
+<suite id="s1-s1-s1" name="Test Suite" source="D:\RATTS_bluerise\RATTS\backend\Resource\generated_suite\user1\test_suite.robot">
+<test id="s1-s1-s1-t1" name="login TC_BR_Login_001" line="8">
+<kw name="Open Application" owner="gui_resources" type="SETUP">
+<kw name="Set Screenshot Directory" owner="SeleniumLibrary">
+<arg>${SCREENSHOT_DIR}</arg>
+<doc>Sets the directory for captured screenshots.</doc>
+<status status="PASS" start="2025-04-22T16:09:24.305247" elapsed="0.001142"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-04-22T16:09:24.307860" level="INFO">Opening browser 'Chrome' to base url 'https://test.bluerise.solutions/'.</msg>
+<arg>${gui}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-04-22T16:09:24.307072" elapsed="2.940516"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-22T16:09:28.249726" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-22T16:09:27.248053" elapsed="1.002007"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2025-04-22T16:09:28.250660" elapsed="0.003815"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<msg time="2025-04-22T16:09:28.268883" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=135.0.7049.96)
+Stacktrace:
+	GetHandleVerifier [0x00007FF70D455355+78597]
+	GetHandleVerifier [0x00007FF70D4553B0+78688]
+	(No symbol) [0x00007FF70D2091AA]
+	(No symbol) [0x00007FF70D1E1B63]
+	(No symbol) [0x00007FF70D28EB6E]
+	(No symbol) [0x00007FF70D2AEBB2]
+	(No symbol) [0x00007FF70D286EC3]
+	(No symbol) [0x00007FF70D2503F8]
+	(No symbol) [0x00007FF70D251163]
+	GetHandleVerifier [0x00007FF70D6FEF0D+2870973]
+	GetHandleVerifier [0x00007FF70D6F96B8+2848360]
+	GetHandleVerifier [0x00007FF70D716993+2967875]
+	GetHandleVerifier [0x00007FF70D47019A+188746]
+	GetHandleVerifier [0x00007FF70D47847F+222255]
+	GetHandleVerifier [0x00007FF70D45D2D4+111236]
+	GetHandleVerifier [0x00007FF70D45D482+111666]
+	GetHandleVerifier [0x00007FF70D4435A9+5465]
+	BaseThreadInitThunk [0x00007FFD5EE2E8D7+23]
+	RtlUserThreadStart [0x00007FFD601DC5DC+44]
+</msg>
+<msg time="2025-04-22T16:09:28.271697" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=135.0.7049.96)
+Stacktrace:
+	GetHandleVerifier [0x00007FF70D455355+78597]
+	GetHandleVerifier [0x00007FF70D4553B0+78688]
+	(No symbol) [0x00007FF70D2091AA]
+	(No symbol) [0x00007FF70D1E1B63]
+	(No symbol) [0x00007FF70D28EB6E]
+	(No symbol) [0x00007FF70D2AEBB2]
+	(No symbol) [0x00007FF70D286EC3]
+	(No symbol) [0x00007FF70D2503F8]
+	(No symbol) [0x00007FF70D251163]
+	GetHandleVerifier [0x00007FF70D6FEF0D+2870973]
+	GetHandleVerifier [0x00007FF70D6F96B8+2848360]
+	GetHandleVerifier [0x00007FF70D716993+2967875]
+	GetHandleVerifier [0x00007FF70D47019A+188746]
+	GetHandleVerifier [0x00007FF70D47847F+222255]
+	GetHandleVerifier [0x00007FF70D45D2D4+111236]
+	GetHandleVerifier [0x00007FF70D45D482+111666]
+	GetHandleVerifier [0x00007FF70D4435A9+5465]
+	BaseThreadInitThunk [0x00007FFD5EE2E8D7+23]
+	RtlUserThreadStart [0x00007FFD601DC5DC+44]
+</msg>
+<doc>Maximizes current browser window.</doc>
+<status status="FAIL" start="2025-04-22T16:09:28.254828" elapsed="0.163632">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=135.0.7049.96)
+Stacktrace:
+	GetHandleVerifier [0x00007FF70D455355+78597]
+	GetHandleVerifier [0x00007FF70D4553B0+78688]
+	(No symbol) [0x00007FF70D2091AA]
+	(No symbol) [0x00007FF70D1E1B63]
+	(No symbol) [0x00007FF70D28EB6E]
+	(No symbol) [0x00007FF70D2AEBB2]
+	(No symbol) [0x00007FF70D286EC3]
+	(No symbol) [0x00007FF70D2503F8]
+	(No symbol) [0x00007FF70D251163]
+	GetHandleVerifier [0x00007FF70D6FEF0D+2870973]
+	GetHandleVerifier [0x00007FF70D6F96B8+2848360]
+	GetHandleVerifier [0x00007FF70D716993+2967875]
+	GetHandleVerifier [0x00007FF70D47019A+188746]
+	GetHandleVerifier [0x00007FF70D47847F+222255]
+	GetHandleVerifier [0x00007FF70D45D2D4+111236]
+	GetHandleVerifier [0x00007FF70D45D482+111666]
+	GetHandleVerifier [0x00007FF70D4435A9+5465]
+	BaseThreadInitThunk [0x00007FFD5EE2E8D7+23]
+	RtlUserThreadStart [0x00007FFD601DC5DC+44]
+</status>
+</kw>
+<kw name="Get Title" owner="SeleniumLibrary">
+<var>${dynamic_title}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:28.419041" elapsed="0.000220"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${dynamic_title}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:28.419719" elapsed="0.000090"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<arg>${dynamic_title}</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:28.419953" elapsed="0.000104"/>
+</kw>
+<status status="FAIL" start="2025-04-22T16:09:24.303516" elapsed="4.117123">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=135.0.7049.96)
+Stacktrace:
+	GetHandleVerifier [0x00007FF70D455355+78597]
+	GetHandleVerifier [0x00007FF70D4553B0+78688]
+	(No symbol) [0x00007FF70D2091AA]
+	(No symbol) [0x00007FF70D1E1B63]
+	(No symbol) [0x00007FF70D28EB6E]
+	(No symbol) [0x00007FF70D2AEBB2]
+	(No symbol) [0x00007FF70D286EC3]
+	(No symbol) [0x00007FF70D2503F8]
+	(No symbol) [0x00007FF70D251163]
+	GetHandleVerifier [0x00007FF70D6FEF0D+2870973]
+	GetHandleVerifier [0x00007FF70D6F96B8+2848360]
+	GetHandleVerifier [0x00007FF70D716993+2967875]
+	GetHandleVerifier [0x00007FF70D47019A+188746]
+	GetHandleVerifier [0x00007FF70D47847F+222255]
+	GetHandleVerifier [0x00007FF70D45D2D4+111236]
+	GetHandleVerifier [0x00007FF70D45D482+111666]
+	GetHandleVerifier [0x00007FF70D4435A9+5465]
+	BaseThreadInitThunk [0x00007FFD5EE2E8D7+23]
+	RtlUserThreadStart [0x00007FFD601DC5DC+44]
+</status>
+</kw>
+<doc>login with Test Case  TC_BR_Login_001</doc>
+<status status="FAIL" start="2025-04-22T16:09:24.301844" elapsed="4.119666">Setup failed:
+NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=135.0.7049.96)
+Stacktrace:
+	GetHandleVerifier [0x00007FF70D455355+78597]
+	GetHandleVerifier [0x00007FF70D4553B0+78688]
+	(No symbol) [0x00007FF70D2091AA]
+	(No symbol) [0x00007FF70D1E1B63]
+	(No symbol) [0x00007FF70D28EB6E]
+	(No symbol) [0x00007FF70D2AEBB2]
+	(No symbol) [0x00007FF70D286EC3]
+	(No symbol) [0x00007FF70D2503F8]
+	(No symbol) [0x00007FF70D251163]
+	GetHandleVerifier [0x00007FF70D6FEF0D+2870973]
+	GetHandleVerifier [0x00007FF70D6F96B8+2848360]
+	GetHandleVerifier [0x00007FF70D716993+2967875]
+	GetHandleVerifier [0x00007FF70D47019A+188746]
+	GetHandleVerifier [0x00007FF70D47847F+222255]
+	GetHandleVerifier [0x00007FF70D45D2D4+111236]
+	GetHandleVerifier [0x00007FF70D45D482+111666]
+	GetHandleVerifier [0x00007FF70D4435A9+5465]
+	BaseThreadInitThunk [0x00007FFD5EE2E8D7+23]
+	RtlUserThreadStart [0x00007FFD601DC5DC+44]
+</status>
+</test>
+<test id="s1-s1-s1-t2" name="edit_job Test Case for TC_BR_EditJob_001" line="13">
+<kw name="Page Action" owner="gui_resources">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-04-22T16:09:28.432841" level="INFO">${objdata} = {'nav-link': 'Jobs', 'page-title-box': 'Job description', 'searchInput': 'JD000231', 'jobtitle-field': 'API automation and PlayWright', 'jd_id-field': 'JD000231', 'location-field': 'Chennai, Pune, HYD...</msg>
+<var>${objdata}</var>
+<arg>json.loads(r'''${str_objdata}''')</arg>
+<arg>json</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-04-22T16:09:28.431933" elapsed="0.001259"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Type of objdata: ${objdata.__class__.__name__}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-22T16:09:28.433646" elapsed="0.002334"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${objdata}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-22T16:09:28.436471" elapsed="0.000760"/>
+</kw>
+<kw name="Get File" owner="OperatingSystem">
+<msg time="2025-04-22T16:09:28.438008" level="INFO" html="true">Getting file '&lt;a href="file://D:\RATTS_bluerise\RATTS\backend\Data\Templates\guitemplates\editjob.yaml.template"&gt;D:\RATTS_bluerise\RATTS\backend\Data\Templates\guitemplates\editjob.yaml.template&lt;/a&gt;'.</msg>
+<msg time="2025-04-22T16:09:28.456164" level="INFO">${yaml_content} = a   nav-link    class   {nav-link}
+page   div        class   {page-title-box}
+input    text       id       {searchInput}
+a_tag    link      class     delete_jd_id
+input    text       id       {jobtitl...</msg>
+<var>${yaml_content}</var>
+<arg>Data/Templates/guitemplates/${template_name}</arg>
+<doc>Returns the contents of a specified file.</doc>
+<status status="PASS" start="2025-04-22T16:09:28.437579" elapsed="0.018825"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>--- YAML Data ---</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-22T16:09:28.456851" elapsed="0.000551"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${yaml_content}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-22T16:09:28.457882" elapsed="0.000585"/>
+</kw>
+<kw name="Convert Template To Lists" owner="gui_resources">
+<kw name="Split To Lines" owner="String">
+<msg time="2025-04-22T16:09:28.460529" level="INFO">16 lines returned</msg>
+<msg time="2025-04-22T16:09:28.460818" level="INFO">@{lines} = [ a   nav-link    class   {nav-link} | page   div        class   {page-title-box} | input    text       id       {searchInput} | a_tag    link      class     delete_jd_id | input    text       id     ...</msg>
+<var>@{lines}</var>
+<arg>${yaml_content}</arg>
+<doc>Splits the given string to lines.</doc>
+<status status="PASS" start="2025-04-22T16:09:28.460007" elapsed="0.000979"/>
+</kw>
+<kw name="Create List" owner="BuiltIn">
+<msg time="2025-04-22T16:09:28.461908" level="INFO">@{resls} = [ ]</msg>
+<var>@{resls}</var>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2025-04-22T16:09:28.461398" elapsed="0.000619"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Split String" owner="String">
+<msg time="2025-04-22T16:09:28.464159" level="INFO">@{ls} = [ a | nav-link | class | {nav-link} ]</msg>
+<var>@{ls}</var>
+<arg>${line}</arg>
+<doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
+<status status="PASS" start="2025-04-22T16:09:28.463440" elapsed="0.000825"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-04-22T16:09:28.466117" level="INFO">&amp;{my_dict} = { tag=a | type=nav-link | selector=class | name={nav-link} }</msg>
+<var>&amp;{my_dict}</var>
+<arg>tag=${ls}[0]</arg>
+<arg>type=${ls}[1]</arg>
+<arg>selector=${ls}[2]</arg>
+<arg>name=${ls}[3]</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-04-22T16:09:28.464803" elapsed="0.001499"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${resls}</arg>
+<arg>${my_dict}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2025-04-22T16:09:28.468849" elapsed="0.000917"/>
+</kw>
+<var name="${line}">a   nav-link    class   {nav-link}</var>
+<status status="PASS" start="2025-04-22T16:09:28.462895" elapsed="0.007070"/>
+</iter>
+<iter>
+<kw name="Split String" owner="String">
+<msg time="2025-04-22T16:09:28.472352" level="INFO">@{ls} = [ page | div | class | {page-title-box} ]</msg>
+<var>@{ls}</var>
+<arg>${line}</arg>
+<doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
+<status status="PASS" start="2025-04-22T16:09:28.471457" elapsed="0.001005"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-04-22T16:09:28.473824" level="INFO">&amp;{my_dict} = { tag=page | type=div | selector=class | name={page-title-box} }</msg>
+<var>&amp;{my_dict}</var>
+<arg>tag=${ls}[0]</arg>
+<arg>type=${ls}[1]</arg>
+<arg>selector=${ls}[2]</arg>
+<arg>name=${ls}[3]</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-04-22T16:09:28.472896" elapsed="0.001029"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${resls}</arg>
+<arg>${my_dict}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2025-04-22T16:09:28.474272" elapsed="0.000531"/>
+</kw>
+<var name="${line}">page   div        class   {page-title-box}</var>
+<status status="PASS" start="2025-04-22T16:09:28.470786" elapsed="0.004207"/>
+</iter>
+<iter>
+<kw name="Split String" owner="String">
+<msg time="2025-04-22T16:09:28.476510" level="INFO">@{ls} = [ input | text | id | {searchInput} ]</msg>
+<var>@{ls}</var>
+<arg>${line}</arg>
+<doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
+<status status="PASS" start="2025-04-22T16:09:28.475821" elapsed="0.000831"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-04-22T16:09:28.478312" level="INFO">&amp;{my_dict} = { tag=input | type=text | selector=id | name={searchInput} }</msg>
+<var>&amp;{my_dict}</var>
+<arg>tag=${ls}[0]</arg>
+<arg>type=${ls}[1]</arg>
+<arg>selector=${ls}[2]</arg>
+<arg>name=${ls}[3]</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-04-22T16:09:28.477052" elapsed="0.001430"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${resls}</arg>
+<arg>${my_dict}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2025-04-22T16:09:28.478886" elapsed="0.000604"/>
+</kw>
+<var name="${line}">input    text       id       {searchInput}</var>
+<status status="PASS" start="2025-04-22T16:09:28.475452" elapsed="0.004277"/>
+</iter>
+<iter>
+<kw name="Split String" owner="String">
+<msg time="2025-04-22T16:09:28.481324" level="INFO">@{ls} = [ a_tag | link | class | delete_jd_id ]</msg>
+<var>@{ls}</var>
+<arg>${line}</arg>
+<doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
+<status status="PASS" start="2025-04-22T16:09:28.480601" elapsed="0.000832"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-04-22T16:09:28.483050" level="INFO">&amp;{my_dict} = { tag=a_tag | type=link | selector=class | name=delete_jd_id }</msg>
+<var>&amp;{my_dict}</var>
+<arg>tag=${ls}[0]</arg>
+<arg>type=${ls}[1]</arg>
+<arg>selector=${ls}[2]</arg>
+<arg>name=${ls}[3]</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-04-22T16:09:28.481814" elapsed="0.001337"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${resls}</arg>
+<arg>${my_dict}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2025-04-22T16:09:28.483541" elapsed="0.000650"/>
+</kw>
+<var name="${line}">a_tag    link      class     delete_jd_id</var>
+<status status="PASS" start="2025-04-22T16:09:28.480110" elapsed="0.004252"/>
+</iter>
+<iter>
+<kw name="Split String" owner="String">
+<msg time="2025-04-22T16:09:28.485832" level="INFO">@{ls} = [ input | text | id | {jobtitle-field} ]</msg>
+<var>@{ls}</var>
+<arg>${line}</arg>
+<doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
+<status status="PASS" start="2025-04-22T16:09:28.485242" elapsed="0.000663"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-04-22T16:09:28.487137" level="INFO">&amp;{my_dict} = { tag=input | type=text | selector=id | name={jobtitle-field} }</msg>
+<var>&amp;{my_dict}</var>
+<arg>tag=${ls}[0]</arg>
+<arg>type=${ls}[1]</arg>
+<arg>selector=${ls}[2]</arg>
+<arg>name=${ls}[3]</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-04-22T16:09:28.486183" elapsed="0.001311"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${resls}</arg>
+<arg>${my_dict}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2025-04-22T16:09:28.487998" elapsed="0.000601"/>
+</kw>
+<var name="${line}">input    text       id       {jobtitle-field}</var>
+<status status="PASS" start="2025-04-22T16:09:28.484843" elapsed="0.003968"/>
+</iter>
+<iter>
+<kw name="Split String" owner="String">
+<msg time="2025-04-22T16:09:28.490515" level="INFO">@{ls} = [ input | text | id | {jd_id-field} ]</msg>
+<var>@{ls}</var>
+<arg>${line}</arg>
+<doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
+<status status="PASS" start="2025-04-22T16:09:28.489608" elapsed="0.001045"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-04-22T16:09:28.492792" level="INFO">&amp;{my_dict} = { tag=input | type=text | selector=id | name={jd_id-field} }</msg>
+<var>&amp;{my_dict}</var>
+<arg>tag=${ls}[0]</arg>
+<arg>type=${ls}[1]</arg>
+<arg>selector=${ls}[2]</arg>
+<arg>name=${ls}[3]</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-04-22T16:09:28.491094" elapsed="0.001776"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${resls}</arg>
+<arg>${my_dict}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2025-04-22T16:09:28.493177" elapsed="0.000477"/>
+</kw>
+<var name="${line}">input    text       id       {jd_id-field} </var>
+<status status="PASS" start="2025-04-22T16:09:28.489201" elapsed="0.004605"/>
+</iter>
+<iter>
+<kw name="Split String" owner="String">
+<msg time="2025-04-22T16:09:28.494911" level="INFO">@{ls} = [ input | text | id | {location-field} ]</msg>
+<var>@{ls}</var>
+<arg>${line}</arg>
+<doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
+<status status="PASS" start="2025-04-22T16:09:28.494397" elapsed="0.000596"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-04-22T16:09:28.496693" level="INFO">&amp;{my_dict} = { tag=input | type=text | selector=id | name={location-field} }</msg>
+<var>&amp;{my_dict}</var>
+<arg>tag=${ls}[0]</arg>
+<arg>type=${ls}[1]</arg>
+<arg>selector=${ls}[2]</arg>
+<arg>name=${ls}[3]</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-04-22T16:09:28.495287" elapsed="0.001508"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${resls}</arg>
+<arg>${my_dict}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2025-04-22T16:09:28.497157" elapsed="0.000571"/>
+</kw>
+<var name="${line}">input    text       id       {location-field}</var>
+<status status="PASS" start="2025-04-22T16:09:28.494105" elapsed="0.003786"/>
+</iter>
+<iter>
+<kw name="Split String" owner="String">
+<msg time="2025-04-22T16:09:28.499621" level="INFO">@{ls} = [ input | text | class | {tag-input} ]</msg>
+<var>@{ls}</var>
+<arg>${line}</arg>
+<doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
+<status status="PASS" start="2025-04-22T16:09:28.498550" elapsed="0.001230"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-04-22T16:09:28.501589" level="INFO">&amp;{my_dict} = { tag=input | type=text | selector=class | name={tag-input} }</msg>
+<var>&amp;{my_dict}</var>
+<arg>tag=${ls}[0]</arg>
+<arg>type=${ls}[1]</arg>
+<arg>selector=${ls}[2]</arg>
+<arg>name=${ls}[3]</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-04-22T16:09:28.500240" elapsed="0.001461"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${resls}</arg>
+<arg>${my_dict}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2025-04-22T16:09:28.502171" elapsed="0.000594"/>
+</kw>
+<var name="${line}">input    text       class       {tag-input}</var>
+<status status="PASS" start="2025-04-22T16:09:28.498242" elapsed="0.004686"/>
+</iter>
+<iter>
+<kw name="Split String" owner="String">
+<msg time="2025-04-22T16:09:28.504310" level="INFO">@{ls} = [ input | text | id | {positions-field} ]</msg>
+<var>@{ls}</var>
+<arg>${line}</arg>
+<doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
+<status status="PASS" start="2025-04-22T16:09:28.503670" elapsed="0.000731"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-04-22T16:09:28.505772" level="INFO">&amp;{my_dict} = { tag=input | type=text | selector=id | name={positions-field} }</msg>
+<var>&amp;{my_dict}</var>
+<arg>tag=${ls}[0]</arg>
+<arg>type=${ls}[1]</arg>
+<arg>selector=${ls}[2]</arg>
+<arg>name=${ls}[3]</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-04-22T16:09:28.504763" elapsed="0.001116"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${resls}</arg>
+<arg>${my_dict}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2025-04-22T16:09:28.506245" elapsed="0.000465"/>
+</kw>
+<var name="${line}">input    text       id       {positions-field}</var>
+<status status="PASS" start="2025-04-22T16:09:28.503275" elapsed="0.003577"/>
+</iter>
+<iter>
+<kw name="Split String" owner="String">
+<msg time="2025-04-22T16:09:28.507944" level="INFO">@{ls} = [ input | text | id | {deadlinedate-field} ]</msg>
+<var>@{ls}</var>
+<arg>${line}</arg>
+<doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
+<status status="PASS" start="2025-04-22T16:09:28.507432" elapsed="0.000624"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-04-22T16:09:28.509548" level="INFO">&amp;{my_dict} = { tag=input | type=text | selector=id | name={deadlinedate-field} }</msg>
+<var>&amp;{my_dict}</var>
+<arg>tag=${ls}[0]</arg>
+<arg>type=${ls}[1]</arg>
+<arg>selector=${ls}[2]</arg>
+<arg>name=${ls}[3]</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-04-22T16:09:28.508364" elapsed="0.001414"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${resls}</arg>
+<arg>${my_dict}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2025-04-22T16:09:28.510196" elapsed="0.000457"/>
+</kw>
+<var name="${line}">input    text       id       {deadlinedate-field}</var>
+<status status="PASS" start="2025-04-22T16:09:28.507129" elapsed="0.003672"/>
+</iter>
+<iter>
+<kw name="Split String" owner="String">
+<msg time="2025-04-22T16:09:28.511933" level="INFO">@{ls} = [ input | text | id | {experience-field} ]</msg>
+<var>@{ls}</var>
+<arg>${line}</arg>
+<doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
+<status status="PASS" start="2025-04-22T16:09:28.511357" elapsed="0.000680"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-04-22T16:09:28.513777" level="INFO">&amp;{my_dict} = { tag=input | type=text | selector=id | name={experience-field} }</msg>
+<var>&amp;{my_dict}</var>
+<arg>tag=${ls}[0]</arg>
+<arg>type=${ls}[1]</arg>
+<arg>selector=${ls}[2]</arg>
+<arg>name=${ls}[3]</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-04-22T16:09:28.512363" elapsed="0.001564"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${resls}</arg>
+<arg>${my_dict}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2025-04-22T16:09:28.514401" elapsed="0.000548"/>
+</kw>
+<var name="${line}">input    text       id       {experience-field}</var>
+<status status="PASS" start="2025-04-22T16:09:28.511082" elapsed="0.004086"/>
+</iter>
+<iter>
+<kw name="Split String" owner="String">
+<msg time="2025-04-22T16:09:28.516897" level="INFO">@{ls} = [ input | text | id | {max-experience-field} ]</msg>
+<var>@{ls}</var>
+<arg>${line}</arg>
+<doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
+<status status="PASS" start="2025-04-22T16:09:28.515922" elapsed="0.001191"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-04-22T16:09:28.519227" level="INFO">&amp;{my_dict} = { tag=input | type=text | selector=id | name={max-experience-field} }</msg>
+<var>&amp;{my_dict}</var>
+<arg>tag=${ls}[0]</arg>
+<arg>type=${ls}[1]</arg>
+<arg>selector=${ls}[2]</arg>
+<arg>name=${ls}[3]</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-04-22T16:09:28.517643" elapsed="0.001745"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${resls}</arg>
+<arg>${my_dict}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2025-04-22T16:09:28.520013" elapsed="0.000916"/>
+</kw>
+<var name="${line}">input    text       id       {max-experience-field}</var>
+<status status="PASS" start="2025-04-22T16:09:28.515518" elapsed="0.005633"/>
+</iter>
+<iter>
+<kw name="Split String" owner="String">
+<msg time="2025-04-22T16:09:28.522947" level="INFO">@{ls} = [ select | select | id | {priority-input} ]</msg>
+<var>@{ls}</var>
+<arg>${line}</arg>
+<doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
+<status status="PASS" start="2025-04-22T16:09:28.522148" elapsed="0.000881"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-04-22T16:09:28.524210" level="INFO">&amp;{my_dict} = { tag=select | type=select | selector=id | name={priority-input} }</msg>
+<var>&amp;{my_dict}</var>
+<arg>tag=${ls}[0]</arg>
+<arg>type=${ls}[1]</arg>
+<arg>selector=${ls}[2]</arg>
+<arg>name=${ls}[3]</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-04-22T16:09:28.523412" elapsed="0.000933"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${resls}</arg>
+<arg>${my_dict}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2025-04-22T16:09:28.524688" elapsed="0.000643"/>
+</kw>
+<var name="${line}">select   select      id       {priority-input}</var>
+<status status="PASS" start="2025-04-22T16:09:28.521671" elapsed="0.003892"/>
+</iter>
+<iter>
+<kw name="Split String" owner="String">
+<msg time="2025-04-22T16:09:28.527066" level="INFO">@{ls} = [ select | select | id | {client-input} ]</msg>
+<var>@{ls}</var>
+<arg>${line}</arg>
+<doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
+<status status="PASS" start="2025-04-22T16:09:28.526399" elapsed="0.000792"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-04-22T16:09:28.529409" level="INFO">&amp;{my_dict} = { tag=select | type=select | selector=id | name={client-input} }</msg>
+<var>&amp;{my_dict}</var>
+<arg>tag=${ls}[0]</arg>
+<arg>type=${ls}[1]</arg>
+<arg>selector=${ls}[2]</arg>
+<arg>name=${ls}[3]</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-04-22T16:09:28.527684" elapsed="0.001890"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${resls}</arg>
+<arg>${my_dict}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2025-04-22T16:09:28.530095" elapsed="0.000383"/>
+</kw>
+<var name="${line}">select   select      id       {client-input}</var>
+<status status="PASS" start="2025-04-22T16:09:28.526004" elapsed="0.004577"/>
+</iter>
+<iter>
+<kw name="Split String" owner="String">
+<msg time="2025-04-22T16:09:28.540322" level="INFO">@{ls} = [ button | button | id | add-btn ]</msg>
+<var>@{ls}</var>
+<arg>${line}</arg>
+<doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
+<status status="PASS" start="2025-04-22T16:09:28.530963" elapsed="0.009453"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-04-22T16:09:28.541261" level="INFO">&amp;{my_dict} = { tag=button | type=button | selector=id | name=add-btn }</msg>
+<var>&amp;{my_dict}</var>
+<arg>tag=${ls}[0]</arg>
+<arg>type=${ls}[1]</arg>
+<arg>selector=${ls}[2]</arg>
+<arg>name=${ls}[3]</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-04-22T16:09:28.540654" elapsed="0.000769"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${resls}</arg>
+<arg>${my_dict}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2025-04-22T16:09:28.541942" elapsed="0.000923"/>
+</kw>
+<var name="${line}">button   button    id         add-btn</var>
+<status status="PASS" start="2025-04-22T16:09:28.530768" elapsed="0.012360"/>
+</iter>
+<iter>
+<kw name="Split String" owner="String">
+<msg time="2025-04-22T16:09:28.545153" level="INFO">@{ls} = [ h2 | h2 | id | swal2-title ]</msg>
+<var>@{ls}</var>
+<arg>${line}</arg>
+<doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
+<status status="PASS" start="2025-04-22T16:09:28.544321" elapsed="0.000942"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-04-22T16:09:28.546830" level="INFO">&amp;{my_dict} = { tag=h2 | type=h2 | selector=id | name=swal2-title }</msg>
+<var>&amp;{my_dict}</var>
+<arg>tag=${ls}[0]</arg>
+<arg>type=${ls}[1]</arg>
+<arg>selector=${ls}[2]</arg>
+<arg>name=${ls}[3]</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-04-22T16:09:28.545720" elapsed="0.001243"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${resls}</arg>
+<arg>${my_dict}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2025-04-22T16:09:28.547318" elapsed="0.000595"/>
+</kw>
+<var name="${line}">h2    h2    id  swal2-title</var>
+<status status="PASS" start="2025-04-22T16:09:28.543734" elapsed="0.004437"/>
+</iter>
+<var>${line}</var>
+<value>@{lines}</value>
+<status status="PASS" start="2025-04-22T16:09:28.462291" elapsed="0.086085"/>
+</for>
+<return>
+<value>@{resls}</value>
+<status status="PASS" start="2025-04-22T16:09:28.548724" elapsed="0.000321"/>
+</return>
+<msg time="2025-04-22T16:09:28.550087" level="INFO">@{result} = [ {'tag': 'a', 'type': 'nav-link', 'selector': 'class', 'name': '{nav-link}'} | {'tag': 'page', 'type': 'div', 'selector': 'class', 'name': '{page-title-box}'} | {'tag': 'input', 'type': 'text', 'sele...</msg>
+<var>@{result}</var>
+<arg>${yaml_content}</arg>
+<status status="PASS" start="2025-04-22T16:09:28.459043" elapsed="0.091204"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>--- YAML List ---</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-22T16:09:28.550804" elapsed="0.000609"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${result}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-22T16:09:28.552064" elapsed="0.000880"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>--- JSON Data ---</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-22T16:09:28.553152" elapsed="0.000581"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${objdata}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-22T16:09:28.554113" elapsed="0.000694"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-22T16:09:29.556175" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-22T16:09:28.555135" elapsed="1.001340"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${url}</arg>
+<arg>index</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-04-22T16:09:29.557840" elapsed="0.000721"/>
+</kw>
+<msg time="2025-04-22T16:09:29.558990" level="INFO">${val_url} = True</msg>
+<var>${val_url}</var>
+<arg>Should Contain</arg>
+<arg>${url}</arg>
+<arg>index</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2025-04-22T16:09:29.557010" elapsed="0.002393"/>
+</kw>
+<if>
+<branch type="IF" condition="${val_url}">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-04-22T16:09:29.560973" level="INFO">Opening url 'https://test.bluerise.solutions/index.html'</msg>
+<msg time="2025-04-22T16:09:29.574879" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=135.0.7049.96)
+Stacktrace:
+	GetHandleVerifier [0x00007FF70D455355+78597]
+	GetHandleVerifier [0x00007FF70D4553B0+78688]
+	(No symbol) [0x00007FF70D2091AA]
+	(No symbol) [0x00007FF70D1E1B63]
+	(No symbol) [0x00007FF70D28EB6E]
+	(No symbol) [0x00007FF70D2AEBB2]
+	(No symbol) [0x00007FF70D286EC3]
+	(No symbol) [0x00007FF70D2503F8]
+	(No symbol) [0x00007FF70D251163]
+	GetHandleVerifier [0x00007FF70D6FEF0D+2870973]
+	GetHandleVerifier [0x00007FF70D6F96B8+2848360]
+	GetHandleVerifier [0x00007FF70D716993+2967875]
+	GetHandleVerifier [0x00007FF70D47019A+188746]
+	GetHandleVerifier [0x00007FF70D47847F+222255]
+	GetHandleVerifier [0x00007FF70D45D2D4+111236]
+	GetHandleVerifier [0x00007FF70D45D482+111666]
+	GetHandleVerifier [0x00007FF70D4435A9+5465]
+	BaseThreadInitThunk [0x00007FFD5EE2E8D7+23]
+	RtlUserThreadStart [0x00007FFD601DC5DC+44]
+</msg>
+<msg time="2025-04-22T16:09:29.575552" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=135.0.7049.96)
+Stacktrace:
+	GetHandleVerifier [0x00007FF70D455355+78597]
+	GetHandleVerifier [0x00007FF70D4553B0+78688]
+	(No symbol) [0x00007FF70D2091AA]
+	(No symbol) [0x00007FF70D1E1B63]
+	(No symbol) [0x00007FF70D28EB6E]
+	(No symbol) [0x00007FF70D2AEBB2]
+	(No symbol) [0x00007FF70D286EC3]
+	(No symbol) [0x00007FF70D2503F8]
+	(No symbol) [0x00007FF70D251163]
+	GetHandleVerifier [0x00007FF70D6FEF0D+2870973]
+	GetHandleVerifier [0x00007FF70D6F96B8+2848360]
+	GetHandleVerifier [0x00007FF70D716993+2967875]
+	GetHandleVerifier [0x00007FF70D47019A+188746]
+	GetHandleVerifier [0x00007FF70D47847F+222255]
+	GetHandleVerifier [0x00007FF70D45D2D4+111236]
+	GetHandleVerifier [0x00007FF70D45D482+111666]
+	GetHandleVerifier [0x00007FF70D4435A9+5465]
+	BaseThreadInitThunk [0x00007FFD5EE2E8D7+23]
+	RtlUserThreadStart [0x00007FFD601DC5DC+44]
+</msg>
+<arg>${gui}${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="FAIL" start="2025-04-22T16:09:29.560430" elapsed="0.057804">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=135.0.7049.96)
+Stacktrace:
+	GetHandleVerifier [0x00007FF70D455355+78597]
+	GetHandleVerifier [0x00007FF70D4553B0+78688]
+	(No symbol) [0x00007FF70D2091AA]
+	(No symbol) [0x00007FF70D1E1B63]
+	(No symbol) [0x00007FF70D28EB6E]
+	(No symbol) [0x00007FF70D2AEBB2]
+	(No symbol) [0x00007FF70D286EC3]
+	(No symbol) [0x00007FF70D2503F8]
+	(No symbol) [0x00007FF70D251163]
+	GetHandleVerifier [0x00007FF70D6FEF0D+2870973]
+	GetHandleVerifier [0x00007FF70D6F96B8+2848360]
+	GetHandleVerifier [0x00007FF70D716993+2967875]
+	GetHandleVerifier [0x00007FF70D47019A+188746]
+	GetHandleVerifier [0x00007FF70D47847F+222255]
+	GetHandleVerifier [0x00007FF70D45D2D4+111236]
+	GetHandleVerifier [0x00007FF70D45D482+111666]
+	GetHandleVerifier [0x00007FF70D4435A9+5465]
+	BaseThreadInitThunk [0x00007FFD5EE2E8D7+23]
+	RtlUserThreadStart [0x00007FFD601DC5DC+44]
+</status>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<arg>document.body.style.zoom='75%';</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.619398" elapsed="0.000473"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.620339" elapsed="0.000312"/>
+</kw>
+<status status="FAIL" start="2025-04-22T16:09:29.559847" elapsed="0.061261">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=135.0.7049.96)
+Stacktrace:
+	GetHandleVerifier [0x00007FF70D455355+78597]
+	GetHandleVerifier [0x00007FF70D4553B0+78688]
+	(No symbol) [0x00007FF70D2091AA]
+	(No symbol) [0x00007FF70D1E1B63]
+	(No symbol) [0x00007FF70D28EB6E]
+	(No symbol) [0x00007FF70D2AEBB2]
+	(No symbol) [0x00007FF70D286EC3]
+	(No symbol) [0x00007FF70D2503F8]
+	(No symbol) [0x00007FF70D251163]
+	GetHandleVerifier [0x00007FF70D6FEF0D+2870973]
+	GetHandleVerifier [0x00007FF70D6F96B8+2848360]
+	GetHandleVerifier [0x00007FF70D716993+2967875]
+	GetHandleVerifier [0x00007FF70D47019A+188746]
+	GetHandleVerifier [0x00007FF70D47847F+222255]
+	GetHandleVerifier [0x00007FF70D45D2D4+111236]
+	GetHandleVerifier [0x00007FF70D45D482+111666]
+	GetHandleVerifier [0x00007FF70D4435A9+5465]
+	BaseThreadInitThunk [0x00007FFD5EE2E8D7+23]
+	RtlUserThreadStart [0x00007FFD601DC5DC+44]
+</status>
+</branch>
+<status status="FAIL" start="2025-04-22T16:09:29.559754" elapsed="0.061822">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=135.0.7049.96)
+Stacktrace:
+	GetHandleVerifier [0x00007FF70D455355+78597]
+	GetHandleVerifier [0x00007FF70D4553B0+78688]
+	(No symbol) [0x00007FF70D2091AA]
+	(No symbol) [0x00007FF70D1E1B63]
+	(No symbol) [0x00007FF70D28EB6E]
+	(No symbol) [0x00007FF70D2AEBB2]
+	(No symbol) [0x00007FF70D286EC3]
+	(No symbol) [0x00007FF70D2503F8]
+	(No symbol) [0x00007FF70D251163]
+	GetHandleVerifier [0x00007FF70D6FEF0D+2870973]
+	GetHandleVerifier [0x00007FF70D6F96B8+2848360]
+	GetHandleVerifier [0x00007FF70D716993+2967875]
+	GetHandleVerifier [0x00007FF70D47019A+188746]
+	GetHandleVerifier [0x00007FF70D47847F+222255]
+	GetHandleVerifier [0x00007FF70D45D2D4+111236]
+	GetHandleVerifier [0x00007FF70D45D482+111666]
+	GetHandleVerifier [0x00007FF70D4435A9+5465]
+	BaseThreadInitThunk [0x00007FFD5EE2E8D7+23]
+	RtlUserThreadStart [0x00007FFD601DC5DC+44]
+</status>
+</if>
+<for flavor="IN">
+<iter>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<arg>document.body.style.zoom='75%';</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.630680" elapsed="0.000228"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<var>${type}</var>
+<arg>${item['type']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.631319" elapsed="0.000144"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${str_text}</var>
+<arg>Should Contain</arg>
+<arg>${type}</arg>
+<arg>text</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.631935" elapsed="0.000147"/>
+</kw>
+<if>
+<branch type="IF" condition="${str_text}">
+<kw name="Set Variable" owner="BuiltIn">
+<var>${spec}</var>
+<arg>${item['name']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.632986" elapsed="0.000146"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${contains_left_brace}</var>
+<arg>Should Contain</arg>
+<arg>${spec}</arg>
+<arg>{</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.633544" elapsed="0.000219"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${spec}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.634171" elapsed="0.000199"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${contains_left_brace}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.634651" elapsed="0.000329"/>
+</kw>
+<if>
+<branch type="IF" condition="${contains_left_brace}">
+<kw name="Replace String" owner="String">
+<var>${spec_var}</var>
+<arg>${spec}</arg>
+<arg>{</arg>
+<arg>${EMPTY}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.636052" elapsed="0.000275"/>
+</kw>
+<kw name="Replace String" owner="String">
+<var>${spec_var}</var>
+<arg>${spec_var}</arg>
+<arg>}</arg>
+<arg>${EMPTY}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.636757" elapsed="0.000211"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${spec_var}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.637343" elapsed="0.000193"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${item['selector']}:${spec_var}</arg>
+<arg>${objdata["${spec_var}"]}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.637917" elapsed="0.000200"/>
+</kw>
+<status status="NOT RUN" start="2025-04-22T16:09:29.635293" elapsed="0.003178"/>
+</branch>
+<status status="NOT RUN" start="2025-04-22T16:09:29.635241" elapsed="0.003449"/>
+</if>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.638983" elapsed="0.000184"/>
+</kw>
+<continue>
+<status status="NOT RUN" start="2025-04-22T16:09:29.639355" elapsed="0.000143"/>
+</continue>
+<status status="NOT RUN" start="2025-04-22T16:09:29.632446" elapsed="0.007237"/>
+</branch>
+<status status="NOT RUN" start="2025-04-22T16:09:29.632297" elapsed="0.007562"/>
+</if>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${str_number}</var>
+<arg>Should Contain</arg>
+<arg>${type}</arg>
+<arg>number</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.640236" elapsed="0.000191"/>
+</kw>
+<if>
+<branch type="IF" condition="${str_number}">
+<kw name="Set Variable" owner="BuiltIn">
+<var>${spec}</var>
+<arg>${item['name']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.641080" elapsed="0.000110"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${contains_left_brace}</var>
+<arg>Should Contain</arg>
+<arg>${spec}</arg>
+<arg>{</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.641485" elapsed="0.000128"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${spec}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.641977" elapsed="0.000170"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${contains_left_brace}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.642449" elapsed="0.000127"/>
+</kw>
+<if>
+<branch type="IF" condition="${contains_left_brace}">
+<kw name="Replace String" owner="String">
+<var>${spec_var}</var>
+<arg>${spec}</arg>
+<arg>{</arg>
+<arg>${EMPTY}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.643097" elapsed="0.000115"/>
+</kw>
+<kw name="Replace String" owner="String">
+<var>${spec_var}</var>
+<arg>${spec_var}</arg>
+<arg>}</arg>
+<arg>${EMPTY}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.643478" elapsed="0.000118"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${spec_var}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.643856" elapsed="0.000107"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${item['selector']}:${spec_var}</arg>
+<arg>${objdata["${spec_var}"]}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.644432" elapsed="0.000212"/>
+</kw>
+<status status="NOT RUN" start="2025-04-22T16:09:29.642803" elapsed="0.002013"/>
+</branch>
+<status status="NOT RUN" start="2025-04-22T16:09:29.642758" elapsed="0.002217"/>
+</if>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.645196" elapsed="0.000130"/>
+</kw>
+<continue>
+<status status="NOT RUN" start="2025-04-22T16:09:29.645499" elapsed="0.000109"/>
+</continue>
+<status status="NOT RUN" start="2025-04-22T16:09:29.640772" elapsed="0.005074"/>
+</branch>
+<status status="NOT RUN" start="2025-04-22T16:09:29.640724" elapsed="0.005323"/>
+</if>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${str_file}</var>
+<arg>Should Contain</arg>
+<arg>${type}</arg>
+<arg>file</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.646384" elapsed="0.000152"/>
+</kw>
+<if>
+<branch type="IF" condition="${str_file}">
+<kw name="Set Variable" owner="BuiltIn">
+<var>${spec}</var>
+<arg>${item['name']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.647208" elapsed="0.000137"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${contains_left_brace}</var>
+<arg>Should Contain</arg>
+<arg>${spec}</arg>
+<arg>{</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.647692" elapsed="0.000125"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${spec}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.648115" elapsed="0.000108"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${contains_left_brace}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.648636" elapsed="0.000109"/>
+</kw>
+<if>
+<branch type="IF" condition="${contains_left_brace}">
+<kw name="Replace String" owner="String">
+<var>${spec_var}</var>
+<arg>${spec}</arg>
+<arg>{</arg>
+<arg>${EMPTY}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.649190" elapsed="0.000109"/>
+</kw>
+<kw name="Replace String" owner="String">
+<var>${spec_var}</var>
+<arg>${spec_var}</arg>
+<arg>}</arg>
+<arg>${EMPTY}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.649624" elapsed="0.000142"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${spec_var}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.650132" elapsed="0.000132"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${item['selector']}:${spec_var}</arg>
+<arg>${objdata["${spec_var}"]}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.650605" elapsed="0.000178"/>
+</kw>
+<status status="NOT RUN" start="2025-04-22T16:09:29.648937" elapsed="0.002042"/>
+</branch>
+<status status="NOT RUN" start="2025-04-22T16:09:29.648897" elapsed="0.002234"/>
+</if>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.651329" elapsed="0.000150"/>
+</kw>
+<continue>
+<status status="NOT RUN" start="2025-04-22T16:09:29.651998" elapsed="0.000298"/>
+</continue>
+<status status="NOT RUN" start="2025-04-22T16:09:29.646835" elapsed="0.005635"/>
+</branch>
+<status status="NOT RUN" start="2025-04-22T16:09:29.646776" elapsed="0.005983"/>
+</if>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${str_text}</var>
+<arg>Should Contain</arg>
+<arg>${type}</arg>
+<arg>textarea</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.653156" elapsed="0.000234"/>
+</kw>
+<if>
+<branch type="IF" condition="${str_text}">
+<kw name="Set Variable" owner="BuiltIn">
+<var>${spec}</var>
+<arg>${item['name']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.654235" elapsed="0.000203"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${contains_left_brace}</var>
+<arg>Should Contain</arg>
+<arg>${spec}</arg>
+<arg>{</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.654871" elapsed="0.000152"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${spec}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.655326" elapsed="0.000141"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${contains_left_brace}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.655707" elapsed="0.000101"/>
+</kw>
+<if>
+<branch type="IF" condition="${contains_left_brace}">
+<kw name="Replace String" owner="String">
+<var>${spec_var}</var>
+<arg>${spec}</arg>
+<arg>{</arg>
+<arg>${EMPTY}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.656295" elapsed="0.000137"/>
+</kw>
+<kw name="Replace String" owner="String">
+<var>${spec_var}</var>
+<arg>${spec_var}</arg>
+<arg>}</arg>
+<arg>${EMPTY}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.656746" elapsed="0.000121"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${spec_var}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.657140" elapsed="0.000133"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>xpath=//textarea[@${item['selector']}='${spec_var}']</arg>
+<arg>${EMPTY}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.657773" elapsed="0.000145"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>xpath=//textarea[@${item['selector']}='${spec_var}']</arg>
+<arg>${objdata["${spec_var}"]}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.658187" elapsed="0.000174"/>
+</kw>
+<status status="NOT RUN" start="2025-04-22T16:09:29.656008" elapsed="0.002529"/>
+</branch>
+<status status="NOT RUN" start="2025-04-22T16:09:29.655965" elapsed="0.002729"/>
+</if>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.658926" elapsed="0.000119"/>
+</kw>
+<continue>
+<status status="NOT RUN" start="2025-04-22T16:09:29.659203" elapsed="0.000143"/>
+</continue>
+<status status="NOT RUN" start="2025-04-22T16:09:29.653749" elapsed="0.005785"/>
+</branch>
+<status status="NOT RUN" start="2025-04-22T16:09:29.653671" elapsed="0.005973"/>
+</if>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${str_text}</var>
+<arg>Should Contain</arg>
+<arg>${type}</arg>
+<arg>password</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.659967" elapsed="0.000225"/>
+</kw>
+<if>
+<branch type="IF" condition="${str_text}">
+<kw name="Set Variable" owner="BuiltIn">
+<var>${spec}</var>
+<arg>${item['name']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.661002" elapsed="0.000220"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${contains_left_brace}</var>
+<arg>Should Contain</arg>
+<arg>${spec}</arg>
+<arg>{</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.661605" elapsed="0.000132"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${spec}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.662036" elapsed="0.000112"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${contains_left_brace}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.662399" elapsed="0.000113"/>
+</kw>
+<if>
+<branch type="IF" condition="${contains_left_brace}">
+<kw name="Replace String" owner="String">
+<var>${spec_var}</var>
+<arg>${spec}</arg>
+<arg>{</arg>
+<arg>${EMPTY}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.662879" elapsed="0.000113"/>
+</kw>
+<kw name="Replace String" owner="String">
+<var>${spec_var}</var>
+<arg>${spec_var}</arg>
+<arg>}</arg>
+<arg>${EMPTY}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.663243" elapsed="0.000125"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${spec_var}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.663787" elapsed="0.000176"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${item['selector']}:${spec_var}</arg>
+<arg>${objdata["${spec_var}"]}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.664296" elapsed="0.000125"/>
+</kw>
+<status status="NOT RUN" start="2025-04-22T16:09:29.662686" elapsed="0.001862"/>
+</branch>
+<status status="NOT RUN" start="2025-04-22T16:09:29.662641" elapsed="0.002023"/>
+</if>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.664853" elapsed="0.000147"/>
+</kw>
+<continue>
+<status status="NOT RUN" start="2025-04-22T16:09:29.665156" elapsed="0.000146"/>
+</continue>
+<status status="NOT RUN" start="2025-04-22T16:09:29.660547" elapsed="0.004927"/>
+</branch>
+<status status="NOT RUN" start="2025-04-22T16:09:29.660481" elapsed="0.005135"/>
+</if>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${str_text}</var>
+<arg>Should Contain</arg>
+<arg>${type}</arg>
+<arg>alert</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.665876" elapsed="0.000139"/>
+</kw>
+<if>
+<branch type="IF" condition="${str_text}">
+<kw name="Set Variable" owner="BuiltIn">
+<var>${spec}</var>
+<arg>${item['name']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.666625" elapsed="0.000154"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${contains_left_brace}</var>
+<arg>Should Contain</arg>
+<arg>${spec}</arg>
+<arg>{</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.667084" elapsed="0.000108"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${spec}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.667551" elapsed="0.000154"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${contains_left_brace}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.668148" elapsed="0.000126"/>
+</kw>
+<if>
+<branch type="IF" condition="${contains_left_brace}">
+<kw name="Replace String" owner="String">
+<var>${spec_var}</var>
+<arg>${spec}</arg>
+<arg>{</arg>
+<arg>${EMPTY}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.669057" elapsed="0.000122"/>
+</kw>
+<kw name="Replace String" owner="String">
+<var>${spec_var}</var>
+<arg>${spec_var}</arg>
+<arg>}</arg>
+<arg>${EMPTY}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.669384" elapsed="0.000101"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${spec_var}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.669701" elapsed="0.000229"/>
+</kw>
+<kw name="Handle Alert" owner="SeleniumLibrary">
+<var>${alert_text}</var>
+<arg>action=ACCEPT</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.670684" elapsed="0.000393"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${alert_text}</arg>
+<arg>${objdata["${spec_var}"]}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.672003" elapsed="0.000297"/>
+</kw>
+<status status="NOT RUN" start="2025-04-22T16:09:29.668540" elapsed="0.004172"/>
+</branch>
+<status status="NOT RUN" start="2025-04-22T16:09:29.668478" elapsed="0.004342"/>
+</if>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.672989" elapsed="0.000117"/>
+</kw>
+<continue>
+<status status="NOT RUN" start="2025-04-22T16:09:29.673272" elapsed="0.000141"/>
+</continue>
+<status status="NOT RUN" start="2025-04-22T16:09:29.666253" elapsed="0.007316"/>
+</branch>
+<status status="NOT RUN" start="2025-04-22T16:09:29.666211" elapsed="0.007513"/>
+</if>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${str_select}</var>
+<arg>Should Contain</arg>
+<arg>${type}</arg>
+<arg>select</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.674015" elapsed="0.000130"/>
+</kw>
+<if>
+<branch type="IF" condition="${str_select}">
+<kw name="Set Variable" owner="BuiltIn">
+<var>${spec}</var>
+<arg>${item['name']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.674638" elapsed="0.000106"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${contains_left_brace}</var>
+<arg>Should Contain</arg>
+<arg>${spec}</arg>
+<arg>{</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.675071" elapsed="0.000148"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${spec}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.675482" elapsed="0.000103"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${contains_left_brace}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.675803" elapsed="0.000129"/>
+</kw>
+<if>
+<branch type="IF" condition="${contains_left_brace}">
+<kw name="Replace String" owner="String">
+<var>${spec_var}</var>
+<arg>${spec}</arg>
+<arg>{</arg>
+<arg>${EMPTY}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.676495" elapsed="0.000128"/>
+</kw>
+<kw name="Replace String" owner="String">
+<var>${spec_var}</var>
+<arg>${spec_var}</arg>
+<arg>}</arg>
+<arg>${EMPTY}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.676907" elapsed="0.000114"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${value}</var>
+<arg>Should Contain</arg>
+<arg>${item['tag']}</arg>
+<arg>select_value</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.677462" elapsed="0.000206"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${value}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.677986" elapsed="0.000126"/>
+</kw>
+<if>
+<branch type="IF" condition="${value}">
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<arg>${item['selector']}:${spec_var}</arg>
+<arg>${objdata["${spec_var}"]}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.678689" elapsed="0.000126"/>
+</kw>
+<status status="NOT RUN" start="2025-04-22T16:09:29.678320" elapsed="0.000623"/>
+</branch>
+<branch type="ELSE">
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<arg>${item['selector']}:${spec_var}</arg>
+<arg>${objdata["${spec_var}"]}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.679347" elapsed="0.000150"/>
+</kw>
+<status status="NOT RUN" start="2025-04-22T16:09:29.679061" elapsed="0.000647"/>
+</branch>
+<status status="NOT RUN" start="2025-04-22T16:09:29.678268" elapsed="0.001567"/>
+</if>
+<status status="NOT RUN" start="2025-04-22T16:09:29.676178" elapsed="0.003720"/>
+</branch>
+<status status="NOT RUN" start="2025-04-22T16:09:29.676128" elapsed="0.003869"/>
+</if>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.680176" elapsed="0.000125"/>
+</kw>
+<continue>
+<status status="NOT RUN" start="2025-04-22T16:09:29.680465" elapsed="0.000118"/>
+</continue>
+<status status="NOT RUN" start="2025-04-22T16:09:29.674374" elapsed="0.006334"/>
+</branch>
+<status status="NOT RUN" start="2025-04-22T16:09:29.674331" elapsed="0.006514"/>
+</if>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${str_submit}</var>
+<arg>Should Contain</arg>
+<arg>${type}</arg>
+<arg>submit</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.681071" elapsed="0.000147"/>
+</kw>
+<if>
+<branch type="IF" condition="${str_submit}">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${item['name']}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.681759" elapsed="0.000138"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<arg>window.scrollTo(0, document.body.scrollHeight);</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.682221" elapsed="0.000149"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${item['selector']}:${item['name']}</arg>
+<arg>timeout=1s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.682658" elapsed="0.000131"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${item['selector']}:${item['name']}</arg>
+<arg>timeout=1s</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.683053" elapsed="0.000135"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<arg>document.querySelector('.${item['name']}').click();</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.683471" elapsed="0.000107"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>element clicked</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.683914" elapsed="0.000112"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.684276" elapsed="0.000131"/>
+</kw>
+<continue>
+<status status="NOT RUN" start="2025-04-22T16:09:29.684590" elapsed="0.000119"/>
+</continue>
+<status status="NOT RUN" start="2025-04-22T16:09:29.681468" elapsed="0.003353"/>
+</branch>
+<status status="NOT RUN" start="2025-04-22T16:09:29.681417" elapsed="0.003526"/>
+</if>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${str_button}</var>
+<arg>Should Contain</arg>
+<arg>${type}</arg>
+<arg>button</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.685242" elapsed="0.000258"/>
+</kw>
+<if>
+<branch type="IF" condition="${str_button}">
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${str_td}</var>
+<arg>Should Contain</arg>
+<arg>${item['tag']}</arg>
+<arg>td</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.686305" elapsed="0.000200"/>
+</kw>
+<if>
+<branch type="IF" condition="${str_td}">
+<kw name="Set Variable" owner="BuiltIn">
+<var>${spec}</var>
+<arg>${item['name']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.687386" elapsed="0.000183"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${contains_left_brace}</var>
+<arg>Should Contain</arg>
+<arg>${spec}</arg>
+<arg>{</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.688112" elapsed="0.000306"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${spec}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.688886" elapsed="0.000157"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${contains_left_brace}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.689368" elapsed="0.000243"/>
+</kw>
+<if>
+<branch type="IF" condition="${contains_left_brace}">
+<kw name="Replace String" owner="String">
+<var>${spec_var}</var>
+<arg>${spec}</arg>
+<arg>{</arg>
+<arg>${EMPTY}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.690016" elapsed="0.000077"/>
+</kw>
+<kw name="Replace String" owner="String">
+<var>${spec_var}</var>
+<arg>${spec_var}</arg>
+<arg>}</arg>
+<arg>${EMPTY}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.690476" elapsed="0.000252"/>
+</kw>
+<kw name="Click Button Based on Td Value" owner="gui_resources">
+<arg>${objdata['${spec_var}']}</arg>
+<arg>${type}</arg>
+<status status="NOT RUN" start="2025-04-22T16:09:29.691568" elapsed="0.000208"/>
+</kw>
+<status status="NOT RUN" start="2025-04-22T16:09:29.689801" elapsed="0.002274"/>
+</branch>
+<status status="NOT RUN" start="2025-04-22T16:09:29.689768" elapsed="0.002488"/>
+</if>
+<status status="NOT RUN" start="2025-04-22T16:09:29.686781" elapsed="0.005551"/>
+</branch>
+<branch type="ELSE">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<arg>window.scrollTo(0, document.body.scrollHeight);</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.693478" elapsed="0.000114"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>button name is ${item['name']}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.693875" elapsed="0.000171"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${btn_id}</var>
+<arg>Should Contain</arg>
+<arg>${item['selector']}</arg>
+<arg>id</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.694381" elapsed="0.000198"/>
+</kw>
+<if>
+<branch type="IF" condition="${btn_id}">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<arg>var event = new MouseEvent('click', { bubbles: true, cancelable: true }); document.getElementById("${item['name']}").dispatchEvent(event);</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.695300" elapsed="0.000160"/>
+</kw>
+<status status="NOT RUN" start="2025-04-22T16:09:29.694833" elapsed="0.000848"/>
+</branch>
+<status status="NOT RUN" start="2025-04-22T16:09:29.694787" elapsed="0.001031"/>
+</if>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${btn_class}</var>
+<arg>Should Contain</arg>
+<arg>${item['selector']}</arg>
+<arg>class</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.696081" elapsed="0.000141"/>
+</kw>
+<if>
+<branch type="IF" condition="${btn_class}">
+<if>
+<branch type="IF" condition="$item['tag'] == 'data_btn'">
+<kw name="Set Variable" owner="BuiltIn">
+<var>${spec}</var>
+<arg>${item['name']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.697393" elapsed="0.000164"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${contains_left_brace}</var>
+<arg>Should Contain</arg>
+<arg>${spec}</arg>
+<arg>{</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.697938" elapsed="0.000157"/>
+</kw>
+<if>
+<branch type="IF" condition="${contains_left_brace}">
+<kw name="Replace String" owner="String">
+<var>${spec_var}</var>
+<arg>${spec}</arg>
+<arg>{</arg>
+<arg>${EMPTY}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.698951" elapsed="0.000157"/>
+</kw>
+<kw name="Replace String" owner="String">
+<var>${spec_var}</var>
+<arg>${spec_var}</arg>
+<arg>}</arg>
+<arg>${EMPTY}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.699411" elapsed="0.000150"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>xpath=//button[@data-bb-handler='${objdata['${spec_var}']}']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.699943" elapsed="0.000154"/>
+</kw>
+<status status="NOT RUN" start="2025-04-22T16:09:29.698535" elapsed="0.001725"/>
+</branch>
+<branch type="ELSE">
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>xpath=//button[@data-bb-handler='${item['name']}']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.700758" elapsed="0.000152"/>
+</kw>
+<status status="NOT RUN" start="2025-04-22T16:09:29.700388" elapsed="0.000693"/>
+</branch>
+<status status="NOT RUN" start="2025-04-22T16:09:29.698479" elapsed="0.002742"/>
+</if>
+<status status="NOT RUN" start="2025-04-22T16:09:29.697054" elapsed="0.004246"/>
+</branch>
+<branch type="ELSE">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<arg>document.querySelector('.${item['name']}').click();</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.701905" elapsed="0.000258"/>
+</kw>
+<status status="NOT RUN" start="2025-04-22T16:09:29.701416" elapsed="0.001058"/>
+</branch>
+<status status="NOT RUN" start="2025-04-22T16:09:29.697004" elapsed="0.005694"/>
+</if>
+<status status="NOT RUN" start="2025-04-22T16:09:29.696748" elapsed="0.006079"/>
+</branch>
+<status status="NOT RUN" start="2025-04-22T16:09:29.696661" elapsed="0.006360"/>
+</if>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.703372" elapsed="0.000243"/>
+</kw>
+<continue>
+<status status="NOT RUN" start="2025-04-22T16:09:29.703794" elapsed="0.000158"/>
+</continue>
+<status status="NOT RUN" start="2025-04-22T16:09:29.692438" elapsed="0.011655"/>
+</branch>
+<status status="NOT RUN" start="2025-04-22T16:09:29.686733" elapsed="0.017508"/>
+</if>
+<status status="NOT RUN" start="2025-04-22T16:09:29.685955" elapsed="0.018363"/>
+</branch>
+<status status="NOT RUN" start="2025-04-22T16:09:29.685849" elapsed="0.018578"/>
+</if>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${str_script}</var>
+<arg>Should Contain</arg>
+<arg>${type}</arg>
+<arg>script</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.704708" elapsed="0.000181"/>
+</kw>
+<if>
+<branch type="IF" condition="${str_script}">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${item['name']}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.705614" elapsed="0.000156"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.706101" elapsed="0.000136"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>button name is ${item['name']}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.706503" elapsed="0.000115"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<arg>${item['name']};</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.706964" elapsed="0.000180"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.707452" elapsed="0.000118"/>
+</kw>
+<continue>
+<status status="NOT RUN" start="2025-04-22T16:09:29.707730" elapsed="0.000151"/>
+</continue>
+<status status="NOT RUN" start="2025-04-22T16:09:29.705231" elapsed="0.002799"/>
+</branch>
+<status status="NOT RUN" start="2025-04-22T16:09:29.705128" elapsed="0.003056"/>
+</if>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${str_form}</var>
+<arg>Should Contain</arg>
+<arg>${type}</arg>
+<arg>form</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.708446" elapsed="0.000120"/>
+</kw>
+<if>
+<branch type="IF" condition="${str_form}">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${item['name']}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.709226" elapsed="0.000127"/>
+</kw>
+<kw name="Submit Form" owner="SeleniumLibrary">
+<arg>xpath=//form[@${item['selector']}='${item['name']}']</arg>
+<doc>Submits a form identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.709606" elapsed="0.000285"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.710260" elapsed="0.000140"/>
+</kw>
+<continue>
+<status status="NOT RUN" start="2025-04-22T16:09:29.710551" elapsed="0.000113"/>
+</continue>
+<status status="NOT RUN" start="2025-04-22T16:09:29.708867" elapsed="0.001980"/>
+</branch>
+<status status="NOT RUN" start="2025-04-22T16:09:29.708809" elapsed="0.002207"/>
+</if>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${str_radio}</var>
+<arg>Should Contain</arg>
+<arg>${type}</arg>
+<arg>radio</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.711384" elapsed="0.000184"/>
+</kw>
+<if>
+<branch type="IF" condition="${str_radio}">
+<kw name="Set Variable" owner="BuiltIn">
+<var>${spec}</var>
+<arg>${item['name']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.712247" elapsed="0.000129"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${contains_left_brace}</var>
+<arg>Should Contain</arg>
+<arg>${spec}</arg>
+<arg>{</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.712689" elapsed="0.000158"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${spec}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.713165" elapsed="0.000135"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${contains_left_brace}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.713597" elapsed="0.000208"/>
+</kw>
+<if>
+<branch type="IF" condition="${contains_left_brace}">
+<kw name="Replace String" owner="String">
+<var>${spec_var}</var>
+<arg>${spec}</arg>
+<arg>{</arg>
+<arg>${EMPTY}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.714440" elapsed="0.001158"/>
+</kw>
+<kw name="Replace String" owner="String">
+<var>${spec_var}</var>
+<arg>${spec_var}</arg>
+<arg>}</arg>
+<arg>${EMPTY}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.716024" elapsed="0.000168"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${spec_var}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.716595" elapsed="0.000144"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${contains_td}</var>
+<arg>Should Contain</arg>
+<arg>${item['tag']}</arg>
+<arg>td</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.717034" elapsed="0.000129"/>
+</kw>
+<if>
+<branch type="IF" condition="${contains_td}">
+<kw name="Select Radio Button Based On Td Value" owner="gui_resources">
+<arg>${objdata["${spec_var}"]}</arg>
+<status status="NOT RUN" start="2025-04-22T16:09:29.717761" elapsed="0.000129"/>
+</kw>
+<status status="NOT RUN" start="2025-04-22T16:09:29.717392" elapsed="0.000626"/>
+</branch>
+<branch type="ELSE">
+<kw name="Set Variable" owner="BuiltIn">
+<var>${spec}</var>
+<arg>${item['name']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.718426" elapsed="0.000189"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${contains_left_brace}</var>
+<arg>Should Contain</arg>
+<arg>${spec}</arg>
+<arg>{</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.719078" elapsed="0.000261"/>
+</kw>
+<if>
+<branch type="IF" condition="${contains_left_brace}">
+<kw name="Replace String" owner="String">
+<var>${spec_var}</var>
+<arg>${spec}</arg>
+<arg>{</arg>
+<arg>${EMPTY}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.720289" elapsed="0.000369"/>
+</kw>
+<kw name="Replace String" owner="String">
+<var>${spec_var}</var>
+<arg>${spec_var}</arg>
+<arg>}</arg>
+<arg>${EMPTY}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.721184" elapsed="0.000227"/>
+</kw>
+<kw name="Get WebElement" owner="SeleniumLibrary">
+<var>${radio_button}</var>
+<arg>xpath=//label[contains(text(), "${objdata['${spec_var}']}")]</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.722025" elapsed="0.000201"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${radio_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.722690" elapsed="0.000121"/>
+</kw>
+<status status="NOT RUN" start="2025-04-22T16:09:29.719754" elapsed="0.003149"/>
+</branch>
+<branch type="ELSE">
+<kw name="Select Radio Button" owner="SeleniumLibrary">
+<arg>${spec_var}</arg>
+<arg>${objdata["${spec_var}"]}</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.723198" elapsed="0.000159"/>
+</kw>
+<status status="NOT RUN" start="2025-04-22T16:09:29.722979" elapsed="0.000532"/>
+</branch>
+<status status="NOT RUN" start="2025-04-22T16:09:29.719674" elapsed="0.004034"/>
+</if>
+<status status="NOT RUN" start="2025-04-22T16:09:29.718152" elapsed="0.005691"/>
+</branch>
+<status status="NOT RUN" start="2025-04-22T16:09:29.717346" elapsed="0.006646"/>
+</if>
+<status status="NOT RUN" start="2025-04-22T16:09:29.714083" elapsed="0.009992"/>
+</branch>
+<status status="NOT RUN" start="2025-04-22T16:09:29.714020" elapsed="0.010208"/>
+</if>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.724508" elapsed="0.000181"/>
+</kw>
+<continue>
+<status status="NOT RUN" start="2025-04-22T16:09:29.724902" elapsed="0.000142"/>
+</continue>
+<status status="NOT RUN" start="2025-04-22T16:09:29.711902" elapsed="0.013291"/>
+</branch>
+<status status="NOT RUN" start="2025-04-22T16:09:29.711840" elapsed="0.013481"/>
+</if>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${str_page}</var>
+<arg>Should Contain</arg>
+<arg>${type}</arg>
+<arg>url</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.725576" elapsed="0.000305"/>
+</kw>
+<if>
+<branch type="IF" condition="${str_page}">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${item['name']}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.726539" elapsed="0.000141"/>
+</kw>
+<kw name="Wait Until Location Contains" owner="SeleniumLibrary">
+<arg>${item['name']}</arg>
+<doc>Waits until the current URL contains ``expected``.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.727009" elapsed="0.000135"/>
+</kw>
+<kw name="Get Location" owner="SeleniumLibrary">
+<var>${current_url}</var>
+<doc>Returns the current browser window URL.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.727421" elapsed="0.000124"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${current_url}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.727920" elapsed="0.000173"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${current_url}</arg>
+<arg>${item['name']}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.728568" elapsed="0.000258"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.729073" elapsed="0.000125"/>
+</kw>
+<continue>
+<status status="NOT RUN" start="2025-04-22T16:09:29.729340" elapsed="0.000097"/>
+</continue>
+<status status="NOT RUN" start="2025-04-22T16:09:29.726206" elapsed="0.003502"/>
+</branch>
+<status status="NOT RUN" start="2025-04-22T16:09:29.726151" elapsed="0.003737"/>
+</if>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${str_nava_tag}</var>
+<arg>Should Contain</arg>
+<arg>${type}</arg>
+<arg>nav-link</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.730186" elapsed="0.000082"/>
+</kw>
+<if>
+<branch type="IF" condition="${str_nava_tag}">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Link name is ${item['name']}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.730743" elapsed="0.000103"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>A Tag name is ${item['name']}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.731029" elapsed="0.000178"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${str_nava_tag}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.731492" elapsed="0.000148"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<var>${spec}</var>
+<arg>${item['name']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.732029" elapsed="0.000241"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${contains_left_brace}</var>
+<arg>Should Contain</arg>
+<arg>${spec}</arg>
+<arg>{</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.732682" elapsed="0.000143"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${spec}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.733205" elapsed="0.000124"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${contains_left_brace}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.733889" elapsed="0.000268"/>
+</kw>
+<if>
+<branch type="IF" condition="${contains_left_brace}">
+<kw name="Replace String" owner="String">
+<var>${spec_var}</var>
+<arg>${spec}</arg>
+<arg>{</arg>
+<arg>${EMPTY}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.734847" elapsed="0.000149"/>
+</kw>
+<kw name="Replace String" owner="String">
+<var>${spec_var}</var>
+<arg>${spec_var}</arg>
+<arg>}</arg>
+<arg>${EMPTY}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.735349" elapsed="0.000167"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//a[contains(.,'${objdata['${spec_var}']}')]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.735920" elapsed="0.000188"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath=//a[contains(.,'${objdata['${spec_var}']}')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.736422" elapsed="0.000134"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.736910" elapsed="0.000200"/>
+</kw>
+<continue>
+<status status="NOT RUN" start="2025-04-22T16:09:29.737230" elapsed="0.000122"/>
+</continue>
+<status status="NOT RUN" start="2025-04-22T16:09:29.734458" elapsed="0.002961"/>
+</branch>
+<status status="NOT RUN" start="2025-04-22T16:09:29.734405" elapsed="0.003097"/>
+</if>
+<status status="NOT RUN" start="2025-04-22T16:09:29.730444" elapsed="0.007139"/>
+</branch>
+<status status="NOT RUN" start="2025-04-22T16:09:29.730414" elapsed="0.007289"/>
+</if>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${str_link}</var>
+<arg>Should Contain</arg>
+<arg>${type}</arg>
+<arg>link</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.737941" elapsed="0.000129"/>
+</kw>
+<if>
+<branch type="IF" condition="${str_link}">
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${str_a_tag}</var>
+<arg>Should Contain</arg>
+<arg>${item['tag']}</arg>
+<arg>td_a_tag</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.738774" elapsed="0.000073"/>
+</kw>
+<if>
+<branch type="IF" condition="${str_a_tag}">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>A Tag name is ${item['name']}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.739108" elapsed="0.000085"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${str_a_tag}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.739431" elapsed="0.000155"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<var>${spec}</var>
+<arg>${item['name']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.739873" elapsed="0.000123"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${contains_left_brace}</var>
+<arg>Should Contain</arg>
+<arg>${spec}</arg>
+<arg>{</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.740329" elapsed="0.000173"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${spec}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.740840" elapsed="0.000128"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${contains_left_brace}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.741250" elapsed="0.000127"/>
+</kw>
+<if>
+<branch type="IF" condition="${contains_left_brace}">
+<kw name="Replace String" owner="String">
+<var>${spec_var}</var>
+<arg>${spec}</arg>
+<arg>{</arg>
+<arg>${EMPTY}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.741988" elapsed="0.000122"/>
+</kw>
+<kw name="Replace String" owner="String">
+<var>${spec_var}</var>
+<arg>${spec_var}</arg>
+<arg>}</arg>
+<arg>${EMPTY}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.742431" elapsed="0.000146"/>
+</kw>
+<kw name="Click Button Based on Td Value" owner="gui_resources">
+<arg>${objdata['${spec_var}']}</arg>
+<arg>${type}</arg>
+<status status="NOT RUN" start="2025-04-22T16:09:29.743254" elapsed="0.000173"/>
+</kw>
+<status status="NOT RUN" start="2025-04-22T16:09:29.741661" elapsed="0.002095"/>
+</branch>
+<status status="NOT RUN" start="2025-04-22T16:09:29.741606" elapsed="0.002379"/>
+</if>
+<status status="NOT RUN" start="2025-04-22T16:09:29.738973" elapsed="0.005116"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Link name is ${item['name']}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.744604" elapsed="0.000139"/>
+</kw>
+<kw name="Wait Until Element Is Not Visible" owner="SeleniumLibrary">
+<arg>xpath=//div[@class='blockUI blockOverlay']</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.745168" elapsed="0.000194"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${item['selector']}:${item['name']}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.745643" elapsed="0.000154"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${item['selector']}:${item['name']}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.746302" elapsed="0.000139"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<arg>${item['selector']}=${item['name']}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.746848" elapsed="0.000132"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>0.5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.747273" elapsed="0.000150"/>
+</kw>
+<status status="NOT RUN" start="2025-04-22T16:09:29.744183" elapsed="0.003442"/>
+</branch>
+<status status="NOT RUN" start="2025-04-22T16:09:29.738950" elapsed="0.008889"/>
+</if>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.748080" elapsed="0.000198"/>
+</kw>
+<continue>
+<status status="NOT RUN" start="2025-04-22T16:09:29.748462" elapsed="0.000140"/>
+</continue>
+<status status="NOT RUN" start="2025-04-22T16:09:29.738499" elapsed="0.010327"/>
+</branch>
+<status status="NOT RUN" start="2025-04-22T16:09:29.738447" elapsed="0.010517"/>
+</if>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${str_h2}</var>
+<arg>Should Contain</arg>
+<arg>${type}</arg>
+<arg>h2</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.749234" elapsed="0.000173"/>
+</kw>
+<if>
+<branch type="IF" condition="${str_h2}">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${item['name']}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.750232" elapsed="0.000184"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<var>${spec}</var>
+<arg>${item['name']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.750958" elapsed="0.000188"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${contains_left_brace}</var>
+<arg>Should Contain</arg>
+<arg>${spec}</arg>
+<arg>{</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.751687" elapsed="0.000508"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${spec}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.752532" elapsed="0.000115"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${contains_left_brace}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.752810" elapsed="0.000078"/>
+</kw>
+<if>
+<branch type="IF" condition="${contains_left_brace}">
+<kw name="Replace String" owner="String">
+<var>${spec_var}</var>
+<arg>${spec}</arg>
+<arg>{</arg>
+<arg>${EMPTY}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.753220" elapsed="0.000069"/>
+</kw>
+<kw name="Replace String" owner="String">
+<var>${spec_var}</var>
+<arg>${spec_var}</arg>
+<arg>}</arg>
+<arg>${EMPTY}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.753510" elapsed="0.000184"/>
+</kw>
+<kw name="Wait Until Element Is Not Visible" owner="SeleniumLibrary">
+<arg>xpath=//h2[@${item['selector']}='${spec_var}' and text()='${objdata['${spec_var}']}']</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.754189" elapsed="0.000184"/>
+</kw>
+<status status="NOT RUN" start="2025-04-22T16:09:29.753013" elapsed="0.001525"/>
+</branch>
+<branch type="ELSE">
+<kw name="Wait Until Element Is Not Visible" owner="SeleniumLibrary">
+<arg>xpath=//h2[@${item['selector']}='${item['name']}']</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.755064" elapsed="0.000412"/>
+</kw>
+<status status="NOT RUN" start="2025-04-22T16:09:29.754718" elapsed="0.000990"/>
+</branch>
+<status status="NOT RUN" start="2025-04-22T16:09:29.752981" elapsed="0.002885"/>
+</if>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.756098" elapsed="0.000208"/>
+</kw>
+<continue>
+<status status="NOT RUN" start="2025-04-22T16:09:29.756577" elapsed="0.000159"/>
+</continue>
+<status status="NOT RUN" start="2025-04-22T16:09:29.749811" elapsed="0.007050"/>
+</branch>
+<status status="NOT RUN" start="2025-04-22T16:09:29.749752" elapsed="0.007225"/>
+</if>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${str_loading}</var>
+<arg>Should Contain</arg>
+<arg>${type}</arg>
+<arg>loading</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.757298" elapsed="0.000181"/>
+</kw>
+<if>
+<branch type="IF" condition="${str_loading}">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${item['name']}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.758194" elapsed="0.000179"/>
+</kw>
+<kw name="Wait Until Element Is Not Visible" owner="SeleniumLibrary">
+<arg>${item['selector']}=${item['name']}</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.758725" elapsed="0.000128"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.759095" elapsed="0.000105"/>
+</kw>
+<continue>
+<status status="NOT RUN" start="2025-04-22T16:09:29.759334" elapsed="0.000093"/>
+</continue>
+<status status="NOT RUN" start="2025-04-22T16:09:29.757794" elapsed="0.001734"/>
+</branch>
+<status status="NOT RUN" start="2025-04-22T16:09:29.757733" elapsed="0.001901"/>
+</if>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${str_modal}</var>
+<arg>Should Contain</arg>
+<arg>${type}</arg>
+<arg>div</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.759918" elapsed="0.000207"/>
+</kw>
+<if>
+<branch type="IF" condition="${str_modal}">
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${str_select}</var>
+<arg>Should Contain</arg>
+<arg>${item['tag']}</arg>
+<arg>select</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.760812" elapsed="0.000126"/>
+</kw>
+<if>
+<branch type="IF" condition="${str_select}">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${item['name']}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.761429" elapsed="0.000120"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<var>${spec}</var>
+<arg>${item['name']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.761837" elapsed="0.000282"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${contains_left_brace}</var>
+<arg>Should Contain</arg>
+<arg>${spec}</arg>
+<arg>{</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.762389" elapsed="0.000072"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${spec}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.762731" elapsed="0.000113"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${contains_left_brace}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.762991" elapsed="0.000053"/>
+</kw>
+<if>
+<branch type="IF" condition="${contains_left_brace}">
+<kw name="Replace String" owner="String">
+<var>${spec_var}</var>
+<arg>${spec}</arg>
+<arg>{</arg>
+<arg>${EMPTY}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.763236" elapsed="0.000077"/>
+</kw>
+<kw name="Replace String" owner="String">
+<var>${spec_var}</var>
+<arg>${spec_var}</arg>
+<arg>}</arg>
+<arg>${EMPTY}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.763672" elapsed="0.000066"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${str_class}</var>
+<arg>Should Contain</arg>
+<arg>${item['selector']}</arg>
+<arg>class</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.763893" elapsed="0.000087"/>
+</kw>
+<if>
+<branch type="IF" condition="${str_class}">
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${contains_left_bracket}</var>
+<arg>Should Contain</arg>
+<arg>${spec_var}</arg>
+<arg>[</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.764488" elapsed="0.000159"/>
+</kw>
+<if>
+<branch type="IF" condition="${contains_left_bracket}">
+<kw name="Replace String" owner="String">
+<var>${cleaned_string}</var>
+<arg>${spec_var}</arg>
+<arg>[</arg>
+<arg>${EMPTY}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.765221" elapsed="0.000147"/>
+</kw>
+<kw name="Replace String Using Regexp" owner="String">
+<var>${cleaned_string}</var>
+<arg>${cleaned_string}</arg>
+<arg>\\d*</arg>
+<arg>${EMPTY}</arg>
+<doc>Replaces ``pattern`` in the given ``string`` with ``replace_with``.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.765711" elapsed="0.000125"/>
+</kw>
+<kw name="Replace String" owner="String">
+<var>${cleaned_string}</var>
+<arg>${cleaned_string}</arg>
+<arg>]</arg>
+<arg>${EMPTY}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.766160" elapsed="0.000117"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${cleaned_string}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.766559" elapsed="0.000158"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//div[contains(@${item['selector']},'${cleaned_string}') and text()='${objdata['${spec_var}']}']</arg>
+<arg>timeout=2s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.767115" elapsed="0.000157"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath=//div[contains(@${item['selector']},'${cleaned_string}') and text()='${objdata['${spec_var}']}']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.767725" elapsed="0.000192"/>
+</kw>
+<status status="NOT RUN" start="2025-04-22T16:09:29.764919" elapsed="0.003205"/>
+</branch>
+<branch type="ELSE">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//div[contains(@${item['selector']},'${spec_var}') and text()='${objdata['${spec_var}']}']</arg>
+<arg>timeout=2s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.768910" elapsed="0.000311"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath=//div[contains(@${item['selector']},'${spec_var}') and text()='${objdata['${spec_var}']}']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.769447" elapsed="0.000083"/>
+</kw>
+<status status="NOT RUN" start="2025-04-22T16:09:29.768330" elapsed="0.001393"/>
+</branch>
+<status status="NOT RUN" start="2025-04-22T16:09:29.764857" elapsed="0.004931"/>
+</if>
+<status status="NOT RUN" start="2025-04-22T16:09:29.764156" elapsed="0.005682"/>
+</branch>
+<status status="NOT RUN" start="2025-04-22T16:09:29.764131" elapsed="0.005756"/>
+</if>
+<status status="NOT RUN" start="2025-04-22T16:09:29.763129" elapsed="0.006780"/>
+</branch>
+<branch type="ELSE">
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${str_class}</var>
+<arg>Should Contain</arg>
+<arg>${item['selector']}</arg>
+<arg>class</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.770300" elapsed="0.000211"/>
+</kw>
+<if>
+<branch type="IF" condition="${str_class}">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//div[contains(@${item['selector']},'${item['name']}')]</arg>
+<arg>timeout=2s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.771196" elapsed="0.000167"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>element name class ${item['name']}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.771538" elapsed="0.000088"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath=//div[@${item['selector']}='${item['name']}']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.771947" elapsed="0.000140"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.772405" elapsed="0.000166"/>
+</kw>
+<status status="NOT RUN" start="2025-04-22T16:09:29.770786" elapsed="0.001946"/>
+</branch>
+<branch type="ELSE">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//div[@${item['selector']}='${item['name']}']</arg>
+<arg>timeout=2s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.773118" elapsed="0.000063"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>element name ${item['name']}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.773324" elapsed="0.000068"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath=//div[@${item['selector']}='${item['name']}']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.773576" elapsed="0.000084"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.773807" elapsed="0.000077"/>
+</kw>
+<status status="NOT RUN" start="2025-04-22T16:09:29.772883" elapsed="0.001082"/>
+</branch>
+<status status="NOT RUN" start="2025-04-22T16:09:29.770727" elapsed="0.003310"/>
+</if>
+<status status="NOT RUN" start="2025-04-22T16:09:29.769956" elapsed="0.004124"/>
+</branch>
+<status status="NOT RUN" start="2025-04-22T16:09:29.763112" elapsed="0.011034"/>
+</if>
+<status status="NOT RUN" start="2025-04-22T16:09:29.761159" elapsed="0.013046"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${item['name']}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.774624" elapsed="0.000176"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<var>${spec}</var>
+<arg>${item['name']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.775191" elapsed="0.000166"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${contains_left_brace}</var>
+<arg>Should Contain</arg>
+<arg>${spec}</arg>
+<arg>{</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.775784" elapsed="0.000146"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${spec}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.776223" elapsed="0.000149"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${contains_left_brace}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.776620" elapsed="0.000113"/>
+</kw>
+<if>
+<branch type="IF" condition="${contains_left_brace}">
+<kw name="Replace String" owner="String">
+<var>${spec_var}</var>
+<arg>${spec}</arg>
+<arg>{</arg>
+<arg>${EMPTY}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.777207" elapsed="0.000121"/>
+</kw>
+<kw name="Replace String" owner="String">
+<var>${spec_var}</var>
+<arg>${spec_var}</arg>
+<arg>}</arg>
+<arg>${EMPTY}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.777925" elapsed="0.000234"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${str_class}</var>
+<arg>Should Contain</arg>
+<arg>${item['selector']}</arg>
+<arg>class</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.778644" elapsed="0.000250"/>
+</kw>
+<if>
+<branch type="IF" condition="${str_class}">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//div[contains(@${item['selector']},'${spec_Var}')]</arg>
+<arg>timeout=2s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.779826" elapsed="0.000528"/>
+</kw>
+<status status="NOT RUN" start="2025-04-22T16:09:29.779324" elapsed="0.001235"/>
+</branch>
+<branch type="ELSE">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//div[@${item['selector']}='${spec_Var}']</arg>
+<arg>timeout=2s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.781122" elapsed="0.000422"/>
+</kw>
+<status status="NOT RUN" start="2025-04-22T16:09:29.780727" elapsed="0.000999"/>
+</branch>
+<status status="NOT RUN" start="2025-04-22T16:09:29.779248" elapsed="0.002622"/>
+</if>
+<status status="NOT RUN" start="2025-04-22T16:09:29.776943" elapsed="0.005094"/>
+</branch>
+<branch type="ELSE">
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${str_class}</var>
+<arg>Should Contain</arg>
+<arg>${item['selector']}</arg>
+<arg>class</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.782263" elapsed="0.000066"/>
+</kw>
+<if>
+<branch type="IF" condition="${str_class}">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//div[contains(@${item['selector']},'${item['name']}')]</arg>
+<arg>timeout=2s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.782749" elapsed="0.000158"/>
+</kw>
+<status status="NOT RUN" start="2025-04-22T16:09:29.782444" elapsed="0.000665"/>
+</branch>
+<branch type="ELSE">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//div[@${item['selector']}='${item['name']}']</arg>
+<arg>timeout=2s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.783604" elapsed="0.000143"/>
+</kw>
+<status status="NOT RUN" start="2025-04-22T16:09:29.783277" elapsed="0.000688"/>
+</branch>
+<status status="NOT RUN" start="2025-04-22T16:09:29.782426" elapsed="0.001709"/>
+</if>
+<status status="NOT RUN" start="2025-04-22T16:09:29.782110" elapsed="0.002125"/>
+</branch>
+<status status="NOT RUN" start="2025-04-22T16:09:29.776896" elapsed="0.007675"/>
+</if>
+<status status="NOT RUN" start="2025-04-22T16:09:29.774297" elapsed="0.010360"/>
+</branch>
+<status status="NOT RUN" start="2025-04-22T16:09:29.761119" elapsed="0.023678"/>
+</if>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.785059" elapsed="0.000183"/>
+</kw>
+<continue>
+<status status="NOT RUN" start="2025-04-22T16:09:29.785455" elapsed="0.000153"/>
+</continue>
+<status status="NOT RUN" start="2025-04-22T16:09:29.760435" elapsed="0.025373"/>
+</branch>
+<status status="NOT RUN" start="2025-04-22T16:09:29.760379" elapsed="0.025577"/>
+</if>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${str_cb}</var>
+<arg>Should Contain</arg>
+<arg>${type}</arg>
+<arg>checkbox</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.786258" elapsed="0.000159"/>
+</kw>
+<if>
+<branch type="IF" condition="${str_cb}">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${item['name']}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.787102" elapsed="0.000222"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<var>${spec}</var>
+<arg>${item['name']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.787766" elapsed="0.000182"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${contains_left_brace}</var>
+<arg>Should Contain</arg>
+<arg>${spec}</arg>
+<arg>{</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.788364" elapsed="0.000161"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${spec}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.788908" elapsed="0.000160"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${contains_left_brace}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.789369" elapsed="0.000140"/>
+</kw>
+<if>
+<branch type="IF" condition="${contains_left_brace}">
+<kw name="Replace String" owner="String">
+<var>${spec_var}</var>
+<arg>${spec}</arg>
+<arg>{</arg>
+<arg>${EMPTY}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.790121" elapsed="0.000143"/>
+</kw>
+<kw name="Replace String" owner="String">
+<var>${spec_var}</var>
+<arg>${spec_var}</arg>
+<arg>}</arg>
+<arg>${EMPTY}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.790603" elapsed="0.000149"/>
+</kw>
+<kw name="Get WebElement" owner="SeleniumLibrary">
+<var>${checkbox}</var>
+<arg>xpath=//table[@${item['selector']}='${spec_Var}']//td[text()='${objdata['${spec_var}']}']/preceding-sibling::td/input[@type='checkbox']</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.791158" elapsed="0.000162"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${checkbox}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.791716" elapsed="0.000207"/>
+</kw>
+<status status="NOT RUN" start="2025-04-22T16:09:29.789776" elapsed="0.002419"/>
+</branch>
+<branch type="ELSE">
+<kw name="Select Frame" owner="SeleniumLibrary">
+<arg>xpath=//iframe[contains(@src, 'recaptcha')]</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.792862" elapsed="0.000225"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//span[contains(@id,'recaptcha-anchor')]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.793534" elapsed="0.000235"/>
+</kw>
+<kw name="Get WebElement" owner="SeleniumLibrary">
+<var>${checkbox}</var>
+<arg>xpath=//span[contains(@${item['selector']},'${item['name']}')]</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.794202" elapsed="0.000195"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${checkbox}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.794835" elapsed="0.000198"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.795374" elapsed="0.000098"/>
+</kw>
+<kw name="Unselect Frame" owner="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.795595" elapsed="0.000084"/>
+</kw>
+<status status="NOT RUN" start="2025-04-22T16:09:29.792405" elapsed="0.003404"/>
+</branch>
+<status status="NOT RUN" start="2025-04-22T16:09:29.789717" elapsed="0.006243"/>
+</if>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.796288" elapsed="0.000187"/>
+</kw>
+<continue>
+<status status="NOT RUN" start="2025-04-22T16:09:29.796708" elapsed="0.000100"/>
+</continue>
+<status status="NOT RUN" start="2025-04-22T16:09:29.786667" elapsed="0.010268"/>
+</branch>
+<status status="NOT RUN" start="2025-04-22T16:09:29.786621" elapsed="0.010480"/>
+</if>
+<var name="${item}"/>
+<status status="NOT RUN" start="2025-04-22T16:09:29.630007" elapsed="0.167172"/>
+</iter>
+<var>${item}</var>
+<value>@{result}</value>
+<status status="NOT RUN" start="2025-04-22T16:09:29.621967" elapsed="0.175370"/>
+</for>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-04-22T16:09:29.797771" elapsed="0.000123"/>
+</kw>
+<arg>{"nav-link": "Jobs", "page-title-box": "Job description", "searchInput": "JD000231", "jobtitle-field": "API automation and PlayWright", "jd_id-field": "JD000231", "location-field": "Chennai, Pune, HYD, Bangalore", "tag-input": "PlayWright, Java, Selenium,ReactJS", "positions-field": "2", "deadlinedate-field": "2025-03-27", "experience-field": "4", "max-experience-field": "5", "priority-input": "High", "client-input": "Accenture"}</arg>
+<arg>editjob.yaml.template</arg>
+<arg>index.html</arg>
+<status status="FAIL" start="2025-04-22T16:09:28.431203" elapsed="1.366992">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=135.0.7049.96)
+Stacktrace:
+	GetHandleVerifier [0x00007FF70D455355+78597]
+	GetHandleVerifier [0x00007FF70D4553B0+78688]
+	(No symbol) [0x00007FF70D2091AA]
+	(No symbol) [0x00007FF70D1E1B63]
+	(No symbol) [0x00007FF70D28EB6E]
+	(No symbol) [0x00007FF70D2AEBB2]
+	(No symbol) [0x00007FF70D286EC3]
+	(No symbol) [0x00007FF70D2503F8]
+	(No symbol) [0x00007FF70D251163]
+	GetHandleVerifier [0x00007FF70D6FEF0D+2870973]
+	GetHandleVerifier [0x00007FF70D6F96B8+2848360]
+	GetHandleVerifier [0x00007FF70D716993+2967875]
+	GetHandleVerifier [0x00007FF70D47019A+188746]
+	GetHandleVerifier [0x00007FF70D47847F+222255]
+	GetHandleVerifier [0x00007FF70D45D2D4+111236]
+	GetHandleVerifier [0x00007FF70D45D482+111666]
+	GetHandleVerifier [0x00007FF70D4435A9+5465]
+	BaseThreadInitThunk [0x00007FFD5EE2E8D7+23]
+	RtlUserThreadStart [0x00007FFD601DC5DC+44]
+</status>
+</kw>
+<doc>edit_job with Test  TC_BR_EditJob_001</doc>
+<status status="FAIL" start="2025-04-22T16:09:28.422968" elapsed="1.375873">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=135.0.7049.96)
+Stacktrace:
+	GetHandleVerifier [0x00007FF70D455355+78597]
+	GetHandleVerifier [0x00007FF70D4553B0+78688]
+	(No symbol) [0x00007FF70D2091AA]
+	(No symbol) [0x00007FF70D1E1B63]
+	(No symbol) [0x00007FF70D28EB6E]
+	(No symbol) [0x00007FF70D2AEBB2]
+	(No symbol) [0x00007FF70D286EC3]
+	(No symbol) [0x00007FF70D2503F8]
+	(No symbol) [0x00007FF70D251163]
+	GetHandleVerifier [0x00007FF70D6FEF0D+2870973]
+	GetHandleVerifier [0x00007FF70D6F96B8+2848360]
+	GetHandleVerifier [0x00007FF70D716993+2967875]
+	GetHandleVerifier [0x00007FF70D47019A+188746]
+	GetHandleVerifier [0x00007FF70D47847F+222255]
+	GetHandleVerifier [0x00007FF70D45D2D4+111236]
+	GetHandleVerifier [0x00007FF70D45D482+111666]
+	GetHandleVerifier [0x00007FF70D4435A9+5465]
+	BaseThreadInitThunk [0x00007FFD5EE2E8D7+23]
+	RtlUserThreadStart [0x00007FFD601DC5DC+44]
+</status>
+</test>
+<kw name="Close Application" owner="gui_resources" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-04-22T16:09:29.802072" elapsed="2.199376"/>
+</kw>
+<status status="PASS" start="2025-04-22T16:09:29.800880" elapsed="2.200961"/>
+</kw>
+<doc>Gui Resources</doc>
+<status status="FAIL" start="2025-04-22T16:09:23.659000" elapsed="7.696000"/>
+</suite>
+<status status="FAIL" start="2025-04-22T16:09:23.658000" elapsed="7.696000"/>
+</suite>
+<doc>[https://pabot.org/?ref=log|Pabot] result from 1 executions.</doc>
+<status status="FAIL" start="2025-04-22T16:09:23.641000" elapsed="7.696000"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Api" id="s1" pass="0" fail="2" skip="0">Api</stat>
+<stat name="User1" id="s1-s1" pass="0" fail="2" skip="0">Api.User1</stat>
+<stat name="Test Suite" id="s1-s1-s1" pass="0" fail="2" skip="0">Api.User1.Test Suite</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-04-22T16:09:28.268883" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=135.0.7049.96)
+Stacktrace:
+	GetHandleVerifier [0x00007FF70D455355+78597]
+	GetHandleVerifier [0x00007FF70D4553B0+78688]
+	(No symbol) [0x00007FF70D2091AA]
+	(No symbol) [0x00007FF70D1E1B63]
+	(No symbol) [0x00007FF70D28EB6E]
+	(No symbol) [0x00007FF70D2AEBB2]
+	(No symbol) [0x00007FF70D286EC3]
+	(No symbol) [0x00007FF70D2503F8]
+	(No symbol) [0x00007FF70D251163]
+	GetHandleVerifier [0x00007FF70D6FEF0D+2870973]
+	GetHandleVerifier [0x00007FF70D6F96B8+2848360]
+	GetHandleVerifier [0x00007FF70D716993+2967875]
+	GetHandleVerifier [0x00007FF70D47019A+188746]
+	GetHandleVerifier [0x00007FF70D47847F+222255]
+	GetHandleVerifier [0x00007FF70D45D2D4+111236]
+	GetHandleVerifier [0x00007FF70D45D482+111666]
+	GetHandleVerifier [0x00007FF70D4435A9+5465]
+	BaseThreadInitThunk [0x00007FFD5EE2E8D7+23]
+	RtlUserThreadStart [0x00007FFD601DC5DC+44]
+</msg>
+<msg time="2025-04-22T16:09:29.574879" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=135.0.7049.96)
+Stacktrace:
+	GetHandleVerifier [0x00007FF70D455355+78597]
+	GetHandleVerifier [0x00007FF70D4553B0+78688]
+	(No symbol) [0x00007FF70D2091AA]
+	(No symbol) [0x00007FF70D1E1B63]
+	(No symbol) [0x00007FF70D28EB6E]
+	(No symbol) [0x00007FF70D2AEBB2]
+	(No symbol) [0x00007FF70D286EC3]
+	(No symbol) [0x00007FF70D2503F8]
+	(No symbol) [0x00007FF70D251163]
+	GetHandleVerifier [0x00007FF70D6FEF0D+2870973]
+	GetHandleVerifier [0x00007FF70D6F96B8+2848360]
+	GetHandleVerifier [0x00007FF70D716993+2967875]
+	GetHandleVerifier [0x00007FF70D47019A+188746]
+	GetHandleVerifier [0x00007FF70D47847F+222255]
+	GetHandleVerifier [0x00007FF70D45D2D4+111236]
+	GetHandleVerifier [0x00007FF70D45D482+111666]
+	GetHandleVerifier [0x00007FF70D4435A9+5465]
+	BaseThreadInitThunk [0x00007FFD5EE2E8D7+23]
+	RtlUserThreadStart [0x00007FFD601DC5DC+44]
+</msg>
+</errors>
+</robot>

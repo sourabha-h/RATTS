@@ -1,0 +1,7 @@
+r << 1 1
+0 PIN_FLD_POID           POID [0] 0.0.0.1 /account -1 0
+0 PIN_FLD_ACCOUNT_NO      STR [0] "BA00162323"
+0 PIN_FLD_PROGRAM_NAME    STR [0] "OAP"
+0 PIN_FLD_USER_NAME       STR [0] "ora_support"
+1
+xop CUS_OP_BILL_POL_VIEW_BILL 0 1

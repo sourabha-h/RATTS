@@ -1,0 +1,2 @@
+no,testcase,nav-link,page-title-box,searchInput,jobtitle-field,jd_id-field,location-field,tag-input,positions-field,deadlinedate-field,experience-field,max-experience-field,priority-input,client-input
+1,TC_BR_EditJob_001,Jobs,Job description,JD000231,API automation and PlayWright,JD000231,"Chennai, Pune, HYD, Bangalore","PlayWright, Java, Selenium,ReactJS",2,27-05-2025,4,5,High,Accenture

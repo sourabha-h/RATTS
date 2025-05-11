@@ -1,0 +1,9 @@
+r << 1 1
+0 PIN_FLD_POID           POID [0] ${poid}
+0 PIN_FLD_PROGRAM_NAME    STR [0] "POSITIVE_BALANCE_FIX_AUTO"
+0 PIN_FLD_USER_NAME STR [0] "${username}"
+0 CUS_FLD_SERVICE_IDENTIFIER    STR [0] "${serviceid}"
+0 PIN_FLD_DESCR           STR [0] "${descr}"
+0 PIN_FLD_AMOUNT       DECIMAL [0] ${amount}
+1
+xop CUS_OP_INTEG_APPLY_CHARGE 0 1

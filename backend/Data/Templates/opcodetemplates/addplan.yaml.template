@@ -1,0 +1,12 @@
+0 PIN_FLD_POID                      POID [0] ${PIN_FLD_POID}
+0 PIN_FLD_USER_NAME                  STR [0] "${PIN_FLD_USER_NAME}"
+0 PIN_FLD_PROGRAM_NAME               STR [0] "OAP"
+0 PIN_FLD_PARAM_NAME                 STR [0] "${PIN_FLD_PARAM_NAME}"
+0 PIN_FLD_FLAGS                      INT [0] ${PIN_FLD_FLAGS}
+0 PIN_FLD_PARAMS                   ARRAY [0] allocated 1, used 1
+1     PIN_FLD_VALUE                  STR [0] "${PIN_FLD_VALUE}"
+0 CUS_FLD_PLAN                  ARRAY [0] allocated 2, used 2
+1     PIN_FLD_NAME                   STR [0] "${PIN_FLD_NAME}"
+1     CUS_FLD_PLAN_TYPE             ENUM [0] ${CUS_FLD_PLAN_TYPE}
+1     PIN_FLD_START_T            TSTAMP [0] (${PIN_FLD_START_T}) 
+0 PIN_FLD_POID_SER                  POID [0] ${PIN_FLD_POID_SER}

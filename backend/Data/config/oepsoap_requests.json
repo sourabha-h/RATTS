@@ -1,0 +1,7 @@
+{
+    "oep_operation":{
+        "modify_bb":"ModifyMobileBroadbandService-ChangePlan",
+        "add_mobile":"AddMobileService"
+    }
+   
+}

@@ -1,0 +1,34 @@
+r << 1 1
+0 PIN_FLD_POID           POID [0] 0.0.0.1 /search -1 0
+0 PIN_FLD_FLAGS           INT [0] 256
+0 PIN_FLD_TEMPLATE        STR [0] "select X from /billinfo 1, /account 2, /group/billing 3, /account 4, /group/billing 5, /account 6 where 2.F1 = V1 and  2.F2 = 3.F3  and 3.F4 = 4.F5 and 4.F6 = 5.F7 and 5.F10 = 6.F11 and 6.F12 != V12 and 1.F8 in ( 2.F9 , 3.F4 , 5.F10 ) order by poid_id0 desc"
+0 PIN_FLD_ARGS          ARRAY [1] allocated 1, used 1
+1   PIN_FLD_ACCOUNT_NO  STR [0] "${PIN_FLD_ACCOUNT_NO}"
+0 PIN_FLD_ARGS          ARRAY [2] allocated 1, used 1
+1   PIN_FLD_GROUP_OBJ           POID [0] NULL
+0 PIN_FLD_ARGS          ARRAY [3] allocated 1, used 1
+1   PIN_FLD_POID POID [0] NULL
+0 PIN_FLD_ARGS          ARRAY [4] allocated 1, used 1
+1 PIN_FLD_MEMBERS         ARRAY [1] allocated 1, used 1
+2  PIN_FLD_OBJECT          POID [0] NULL
+0 PIN_FLD_ARGS          ARRAY [5] allocated 1, used 1
+1   PIN_FLD_POID POID [0] NULL
+0 PIN_FLD_ARGS          ARRAY [6] allocated 1, used 1
+1   PIN_FLD_GROUP_OBJ           POID [0] NULL
+0 PIN_FLD_ARGS          ARRAY [7] allocated 1, used 1
+1   PIN_FLD_POID POID [0] NULL
+0 PIN_FLD_ARGS          ARRAY [8] allocated 1, used 1
+1   PIN_FLD_ACCOUNT_OBJ POID [0] NULL
+0 PIN_FLD_ARGS          ARRAY [9] allocated 1, used 1
+1   PIN_FLD_POID POID [0] NULL
+0 PIN_FLD_ARGS          ARRAY [10] allocated 1, used 1
+1 PIN_FLD_MEMBERS        ARRAY [1] allocated 1, used 1
+2  PIN_FLD_OBJECT          POID [0] NULL
+0 PIN_FLD_ARGS          ARRAY [11] allocated 1, used 1
+1   PIN_FLD_POID POID [0] NULL
+0 PIN_FLD_ARGS          ARRAY [12] allocated 1, used 1
+1   PIN_FLD_STATUS  ENUM [0] 10103
+0 PIN_FLD_RESULTS       ARRAY [*] allocated 20, used 1
+1   PIN_FLD_POID POID [0] NULL
+1
+xop PCM_OP_SEARCH 0 1

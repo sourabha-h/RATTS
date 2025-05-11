@@ -1,0 +1,4 @@
+input   text         id  {username}
+input   password     id  {password-input}
+button  submit       class  btn-success
+page   div        class   {page-title-box}
